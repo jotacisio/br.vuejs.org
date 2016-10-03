@@ -702,7 +702,7 @@ new Vue({
 <p>Some of the most notable differences include:</p>
 <ul>
 <li>Directives no longer have instances. This means there’s no more <code>this</code> inside directive hooks. Instead, they receive everything they might need as arguments. If you really must persist state across hooks, you can do so on <code>el</code>.</li>
-<li>Options such as <code>acceptStatement</code>, <code>deep</code>, <code>priority</code>, etc are all deprecated.</li>
+<li>Options such as <code>acceptStatement</code>, <code>deep</code>, <code>priority</code>, etc are all deprecated. To replace <code>twoWay</code> directives, see <a href="#Two-Way-Filters-deprecated">this example</a>.</li>
 <li>Some of the current hooks have different behavior and there are also a couple new hooks.</li>
 </ul>
 <p>Fortunately, since the new directives are much simpler, you can master them more easily. Read the new <a href="custom-directive.html">Custom Directives guide</a> to learn more.</p>

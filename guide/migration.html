@@ -881,7 +881,7 @@ new Vue({
 </div>
 
 <h2 id="Interpolation"><a href="#Interpolation" class="headerlink" title="Interpolation"></a>Interpolation</h2><h3 id="Interpolation-within-Attributes-deprecated"><a href="#Interpolation-within-Attributes-deprecated" class="headerlink" title="Interpolation within Attributes deprecated"></a>Interpolation within Attributes <sup>deprecated</sup></h3><p>Interpolation within attributes is no longer valid. For example:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-bind:class</span>=<span class="string">"btn btn-&#123;&#123; size &#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-&#123;&#123; size &#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>Should either be updated to use an inline expression:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-bind:class</span>=<span class="string">"'btn btn-' + size"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>Or a data/computed property:</p>

@@ -387,23 +387,25 @@ var app = new Vue({
 
 <p>We have already created our very first Vue app! This looks pretty similar to just rendering a string template, but Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now <strong>reactive</strong>. How do we know? Just open up your browser’s JavaScript console and set <code>app.message</code> to a different value. You should see the rendered example above update accordingly.</p>
 <p>In addition to text interpolation, we can also bind element attributes like this:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-2"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-bind:id</span>=<span class="string">"id"</span>&gt;</span>Inspect me<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app2 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-2'</span>,</div><div class="line">  data: &#123;</div><div class="line">    id: <span class="string">'inspect-me'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-2"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-bind:title</span>=<span class="string">"message"</span>&gt;</span></div><div class="line">    Hover your mouse over me for a few seconds to see my dynamically bound title!</div><div class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app2 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-2'</span>,</div><div class="line">  data: &#123;</div><div class="line">    message: <span class="string">'You loaded this page on '</span> + <span class="keyword">new</span> <span class="built_in">Date</span>()</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app-2" class="demo">
-  <span v-bind:id="id">Inspect me</span>
+  <span v-bind:title="message">
+    Hover your mouse over me for a few seconds to see my dynamically bound title!
+  </span>
 </div>
 <script>
 var app2 = new Vue({
   el: '#app-2',
   data: {
-    id: 'inspect-me'
+    message: 'You loaded this page on ' + new Date()
   }
 })
 </script>
 
-<p>Here we are encountering something new. The <code>v-bind</code> attribute you are seeing is called a <strong>directive</strong>. Directives are prefixed with <code>v-</code> to indicate that they are special attributes provided by Vue, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Here it is basically saying “bind this element’s <code>id</code> attribute to the <code>id</code> property on the Vue instance.”</p>
-<p>Use the browser devtools to inspect the element above - you should see that it has the id <code>inspect-me</code>. And yes, it would update if you modify <code>app2.id</code> in the console.</p>
+<p>Here we are encountering something new. The <code>v-bind</code> attribute you are seeing is called a <strong>directive</strong>. Directives are prefixed with <code>v-</code> to indicate that they are special attributes provided by Vue, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Here it is basically saying “keep this element’s <code>title</code> attribute up-to-date with the <code>message</code> property on the Vue instance.”</p>
+<p>If you open up your JavaScript console again and enter <code>app2.message = &#39;some new message&#39;</code>, you’ll once again see that the bound HTML - in this case the <code>title</code> attribute - has been updated.</p>
 <h2 id="Conditionals-and-Loops"><a href="#Conditionals-and-Loops" class="headerlink" title="Conditionals and Loops"></a>Conditionals and Loops</h2><p>It’s quite simple to toggle the presence of an element, too:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-3"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">v-if</span>=<span class="string">"seen"</span>&gt;</span>Now you see me<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app3 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-3'</span>,</div><div class="line">  data: &#123;</div><div class="line">    seen: <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>

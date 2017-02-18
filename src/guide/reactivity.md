@@ -14,7 +14,7 @@ Os getter/setters são invisíveis para o usuário, mas debaixo do capô, eles p
 
 Cada instância de componente tem um observador de instância, **watcher**, correspondente, que registra todas as propriedades "tocadas" durante a renderização do componente e depedências. Mais tarde, quando o setter de uma dependência é acionado, ele notifica o watcher que então faz com que o componente seja re-renderizado.
 
-![Reactivity Cycle](/images/data.png)
+![Reactivity Cycle](images/data.png)
 
 ## Resalva sobre a detecção de alterações
 

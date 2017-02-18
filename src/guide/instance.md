@@ -105,4 +105,4 @@ Existem outros hooks no qual serão chamados em diferentes etapas do ciclo de vi
 
 Abaixo está um diagrama para o ciclo de vida do uma instância do Vue. Você não precisa entender completamente tudo do que está acontecendo no ciclo, mas este diagrama será útil no futuro.
 
-![Ciclo de vida](/images/lifecycle.png)
+![Ciclo de vida](images/lifecycle.png)

@@ -247,7 +247,7 @@ var app6 = new Vue({
 
 O sistema de componentes também é outro importante conceito no Vue, por ser uma abstração que proporciona a construção de aplicações de larga escala compostas por pequenos componentes, auto-contidos e frequentemente reutilizáveis. Se nós pensarmos sobre isso, quase qualquer tipo de interface de uma aplicação pode ser abstraída em uma árvore de componentes:
 
-![Árvore de Componentes](/images/components.png)
+![Árvore de Componentes](images/components.png)
 
 No Vue, um componente é essencialmente uma instância Vue com opções predefinidas. Registrar um componente no Vue é simples:
 

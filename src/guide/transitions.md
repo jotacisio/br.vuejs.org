@@ -99,7 +99,7 @@ Existem quatro classes aplicadas para transição de entrada/saída.
 3. `v-leave`: Ativa o estado de saída. Aplicado quando a transição de saída é acionada, removido depois de um frame.
 4. `v-leave-active`: Ativa e termina o estado de saída. Aplicado quando a transição de saída é acionada, removido quando a transição/animação termina
 
-![Diagrama de Transição](/images/transition.png)
+![Diagrama de Transição](images/transition.png)
 
 Cada uma destas classes serão prefixadas com o nome da transição. Aqui, o prefixo `v-` é padrão quando você utiliza o elemento `<transition>` sem nome. Se você, por exemplo, utilizar `<transition name="my-transition">` a classe `v-enter` seria, no entanto, `my-transition-enter`.
 

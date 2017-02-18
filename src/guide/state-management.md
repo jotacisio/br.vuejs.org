@@ -69,7 +69,7 @@ var vmB = new Vue({
 })
 ```
 
-![State Management](/images/state.png)
+![State Management](images/state.png)
 
 <p class="tip">É importante observar que você nunca deveria substituir o objeto de estado original em suas ações - os componentes e o *store* precisam compartilhar a referência ao mesmo objeto para que as mutações possam ser observadas.</p>
 

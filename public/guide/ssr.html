@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Renderização Server-Side - vue.js</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = "guide"
+        </script>
+        <link rel="stylesheet" href="/br.vuejs.org/css/page.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46852172-1', 'erickpetru.github.io');
+  ga('send', 'pageview');
+</script>
+        <script src="/js/vue.js"></script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="/">
+    <img src="/images/logo.png">
+    <span>Vue.js</span>
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link current">Guia</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">Exemplos</a></li>
+<li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">Chat</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link current">Guia</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">Exemplos</a></li>
+<li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">Chat</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+    <div class="list">
+        <div id="donate" style="margin-bottom: 20px">
+            <span class="wrapper" style="width: 110px">
+              <img src="/images/patreon.png">
+              <a href="/support-vuejs">Ajude o Vue.js</a>
+            </span>
+        </div>
+        <h2>
+            Guia
+            <select class="version-select">
+                <option value="SELF" selected>2.0</option>
+                <option value="v1">1.0</option>
+                <option value="012">0.12</option>
+                <option value="011">0.11</option>
+            </select>
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                  <li><h3>Essenciais</h3></li>
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/installation.html" class="sidebar-link">Instalação</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/index.html" class="sidebar-link">Introdução</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/instance.html" class="sidebar-link">A Instância Vue</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/syntax.html" class="sidebar-link">Template Syntax</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/computed.html" class="sidebar-link">Propriedades Computadas e Observadores</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/class-and-style.html" class="sidebar-link">Bindings Class e Style</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/conditional.html" class="sidebar-link">Renderização Condicional</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/list.html" class="sidebar-link">Renderização de Listas</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/events.html" class="sidebar-link">Manipulação de Eventos</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/forms.html" class="sidebar-link">Input Bindings em Formulários</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/components.html" class="sidebar-link">Componentes</a>
+                </li>
+            
+                
+                
+                
+                  <li><h3>Avançado</h3></li>
+                
+                
+                
+                <li>
+                    <a href="/guide/transitions.html" class="sidebar-link">Efeitos de Transição</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/transitioning-state.html" class="sidebar-link">Transitioning State</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/render-function.html" class="sidebar-link">Funções "render" (Renderização)</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/reactivity.html" class="sidebar-link">Reatividada em Profundidade</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/custom-directive.html" class="sidebar-link">Diretivas Personalizadas</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/mixins.html" class="sidebar-link">Mixins</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/plugins.html" class="sidebar-link">Plugins</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/single-file-components.html" class="sidebar-link">Componentes Single-File</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/deployment.html" class="sidebar-link">Publicando em Produção</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/routing.html" class="sidebar-link">Routing</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/state-management.html" class="sidebar-link">Gerenciamento de Estado</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/unit-testing.html" class="sidebar-link">Unit Testing</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/ssr.html" class="sidebar-link current">Renderização Server-Side</a>
+                </li>
+            
+                
+                
+                
+                
+                  <li><h3>Migração</h3></li>
+                
+                
+                <li>
+                    <a href="/guide/migration.html" class="sidebar-link">Migration from Vue 1.x</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/migration-vue-router.html" class="sidebar-link">Migração do Vue Router 0.7.x</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/migration-vuex.html" class="sidebar-link">Migração do Vuex 0.6.x para 1.0</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                  <li><h3>Diversos</h3></li>
+                
+                <li>
+                    <a href="/guide/comparison.html" class="sidebar-link">Comparação com Outros Frameworks</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/join.html" class="sidebar-link">Join the Vue.js Community!</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content guide with-sidebar ssr-guide">
+    
+      <div id="ad">
+  <span>Sponsored By</span><br>
+  <a href="http://www.thedifferenceengine.io/" target="_blank"
+    style="background-color: rgba(0,0,0,.85); padding: 10px 0">
+    <img src="/images/tde.png">
+  </a>
+  <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script> -->
+</div>
+
+    
+    
+      <h1>Renderização Server-Side</h1>
+    
+    <h2 id="Voce-Precisa-de-SSR"><a href="#Voce-Precisa-de-SSR" class="headerlink" title="Você Precisa de SSR?"></a>Você Precisa de SSR?</h2><p>Antes de mergulhar no SSR (sigla para o inglês <em>Server-Side Rendering</em>), é interessante explorar o que isso efetivamente faz por você e quando você pode precisar dele.</p>
+<h3 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h3><p>Google e Bing podem indexar aplicações JavaScript síncronas sem problemas. <em>Síncrono</em> é a palavra chave aqui. Se sua aplicação inicia com um ícone de carregamento e então busca o conteúdo por Ajax, o robô de indexação não vai esperar a requisição terminar.</p>
+<p>Isso significa que, se você tem conteúdo carregado dinamicamente em páginas onde SEO é importante, SSR pode ser necessário.</p>
+<h3 id="Clientes-com-Internet-Lenta"><a href="#Clientes-com-Internet-Lenta" class="headerlink" title="Clientes com Internet Lenta"></a>Clientes com Internet Lenta</h3><p>Usuários talvez visitem seu site a partir de uma área remota com Internet lenta - ou simplesmente com uma conexão móvel ruim. Nestes casos, você irá querer minimizar o número e o tamanho das requisições necessárias para os usuários verem o conteúdo básico.</p>
+<p>É possível usar <a href="https://webpack.github.io/docs/code-splitting.html" target="_blank" rel="external">code splitting do Webpack</a> para evitar forçar os usuários a baixarem sua aplicação inteira simplesmente para visualizar uma página individual, mas isto ainda não seria tão performático quando baixar um simples arquivo HTML pré-renderizado.</p>
+<h3 id="Clientes-com-Motor-JavaScript-Antigo-Ou-Nulo"><a href="#Clientes-com-Motor-JavaScript-Antigo-Ou-Nulo" class="headerlink" title="Clientes com Motor JavaScript Antigo (Ou Nulo)"></a>Clientes com Motor JavaScript Antigo (Ou Nulo)</h3><p>Para algumas regiões demográficas e áreas do mundo, utilizar um computador de 1998 para acessar a Internet pode ser a única opção. Uma vez que o Vue só é suportado a partir do IE9, você pode querer entregar conteúdo básico para aqueles usuários presos a navegadores antigos - ou para <em>hackers hipsters</em> usando <a href="http://lynx.browser.org/" target="_blank" rel="external">Lynx</a> no terminal.</p>
+<h3 id="SSR-vs-Pre-renderizacao"><a href="#SSR-vs-Pre-renderizacao" class="headerlink" title="SSR vs Pré-renderização"></a>SSR vs Pré-renderização</h3><p>Se você está investigando SSR para melhorar o SEO de algumas páginas de <em>marketing</em> (por exemplo, <code>/</code>, <code>/sobre</code>, <code>/contato</code>, etc), então você provavelmente vai querer utilizar pré-renderização no seu lugar. Ao invés de usar um servidor Web para compilar HTML em tempo real, a pré-renderização simplesmente gera arquivos HTML estáticos para rotas específicas durante a compilação da aplicação. A vantagem é que a configuração de pré-renderização é muito mais simples e permite manter seu <em>frontend</em> como um site totalmente estático.</p>
+<p>Se você estiver usando Webpack, é possível obter isto facilmente com o <a href="https://github.com/chrisvfritz/prerender-spa-plugin" target="_blank" rel="external">prerender-spa-plugin</a>. Ele tem sido extensivamente testado em aplicações Vue - e, de fato, o criador inclusive é membro da equipe principal do Vue.</p>
+<h2 id="Ola-Mundo"><a href="#Ola-Mundo" class="headerlink" title="Olá Mundo"></a>Olá Mundo</h2><p>Se chegou até aqui, está pronto para ver SSR em ação. Soa complexo, mas um script Node simples demonstrando a funcionalidade requer apenas 3 passos:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Passo 1: Criar uma instância Vue</span></div><div class="line"><span class="keyword">var</span> Vue = <span class="built_in">require</span>(<span class="string">'vue'</span>)</div><div class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">render</span>: <span class="function"><span class="keyword">function</span> (<span class="params">h</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> h(<span class="string">'p'</span>, <span class="string">'Olá Mundo'</span>)</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// Passo 2: Criar um renderizador</span></div><div class="line"><span class="keyword">var</span> renderer = <span class="built_in">require</span>(<span class="string">'vue-server-renderer'</span>).createRenderer()</div><div class="line"></div><div class="line"><span class="comment">// Passo 3: Renderizar a instância Vue como HTML</span></div><div class="line">renderer.renderToString(app, <span class="function"><span class="keyword">function</span> (<span class="params">error, html</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (error) <span class="keyword">throw</span> error</div><div class="line">  <span class="built_in">console</span>.log(html)</div><div class="line">  <span class="comment">// =&gt; &lt;p server-rendered="true"&gt;Olá Mundo&lt;/p&gt;</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Não é tão assustador, certo? É claro que este exemplo é muito mais simples do que a maioria das aplicações. Ainda não tivemos que nos preocupar com:</p>
+<ul>
+<li>Um Servidor Web</li>
+<li>Streaming de Resposta</li>
+<li>Cache de Componentes</li>
+<li>Um Processo de Build</li>
+<li>Roteamento</li>
+<li>Hidratação de Estado Vuex</li>
+</ul>
+<p>No restante deste guia, vamos falar sobre como lidar com algumas destas características. Depois de entender o básico, lhe encaminharemos para uma documentação mais detalhada e para exemplos avançados que irão ajudá-lo a lidar com casos extremos.</p>
+<h2 id="SSR-Simples-com-Servidor-Web-Express"><a href="#SSR-Simples-com-Servidor-Web-Express" class="headerlink" title="SSR Simples com Servidor Web Express"></a>SSR Simples com Servidor Web Express</h2><p>É meio forçado chamar algo de “renderização do lado do servidor” quando na verdade não temos um servidor Web, então vamos consertar isso. Construiremos um aplicativo SSR muito simples, usando apenas ES5 e sem qualquer etapa de compilação ou plugins Vue.</p>
+<p>Vamos começar apenas dizendo ao usuário por quantos segundos ele esteve na página:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">template</span>: <span class="string">'&lt;div&gt;Você esteve aqui por &#123;&#123; counter &#125;&#125;s.&lt;/div&gt;'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">counter</span>: <span class="number">0</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">created</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> vm = <span class="keyword">this</span></div><div class="line">    setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      vm.counter += <span class="number">1</span></div><div class="line">    &#125;, <span class="number">1000</span>)</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Para adaptá-lo para SSR, existem algumas modificações que precisaremos fazer, para que funcione tanto no navegador quanto no servidor Node:</p>
+<ul>
+<li>Quando estiver no navegador, coloque uma instância do aplicativo no contexto global (ou seja, <code>window</code>), para que possamos montá-lo no documento.</li>
+<li>Quando estiver no Node, exporte uma função <em>factory</em> para que possamos criar uma nova instância do aplicativo a cada requisição.</li>
+</ul>
+<p>Atender estes passos requer um pouco de código estrutural:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// assets/app.js</span></div><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="string">'use strict'</span></div><div class="line">  <span class="keyword">var</span> createApp = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// ------------------------------</span></div><div class="line">    <span class="comment">// INÍCIO DO CÓDIGO NORMAL DO APP</span></div><div class="line">    <span class="comment">// ------------------------------</span></div><div class="line"></div><div class="line">    <span class="comment">// A instância Vue principal deve ser retornada e possuir</span></div><div class="line">    <span class="comment">// um nó principal com o id "app", para que a versão client-side</span></div><div class="line">    <span class="comment">// possa tomar conta dele assim que carregar.</span></div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Vue(&#123;</div><div class="line">      <span class="attr">template</span>: <span class="string">'&lt;div id="app"&gt;Você esteve aqui por &#123;&#123; counter &#125;&#125;s.&lt;/div&gt;'</span>,</div><div class="line">      <span class="attr">data</span>: &#123;</div><div class="line">        <span class="attr">counter</span>: <span class="number">0</span></div><div class="line">      &#125;,</div><div class="line">      <span class="attr">created</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> vm = <span class="keyword">this</span></div><div class="line">        setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">          vm.counter += <span class="number">1</span></div><div class="line">        &#125;, <span class="number">1000</span>)</div><div class="line">      &#125;</div><div class="line">    &#125;)</div><div class="line"></div><div class="line">    <span class="comment">// -------------------------------</span></div><div class="line">    <span class="comment">// TÉRMINO DO CÓDIGO NORMAL DO APP</span></div><div class="line">    <span class="comment">// -------------------------------</span></div><div class="line">  &#125;</div><div class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">module</span> !== <span class="string">'undefined'</span> &amp;&amp; <span class="built_in">module</span>.exports) &#123;</div><div class="line">    <span class="built_in">module</span>.exports = createApp</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">    <span class="keyword">this</span>.app = createApp()</div><div class="line">  &#125;</div><div class="line">&#125;).call(<span class="keyword">this</span>)</div></pre></td></tr></table></figure>
+<p>Agora que temos o código de nossa aplicação, vamos criar um arquivo <code>index.html</code>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- index.html --&gt;</span></div><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Meu App Vue<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/vue.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/assets/app.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript">app.$mount(<span class="string">'#app'</span>)</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Se o diretório <code>assets</code> realmente contém o arquivo <code>app.js</code> criado anteriormente, assim como um arquivo <code>vue.js</code> com o Vue, devemos ter uma aplicação <em>single-page</em> funcionando!</p>
+<p>Então, para a renderização pelo servidor funcionar, só há mais um passo - o servidor Web:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// server.js</span></div><div class="line"><span class="meta">'use strict'</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</div><div class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>)</div><div class="line"></div><div class="line"><span class="comment">// Define um objeto Vue global para o app.js server-side</span></div><div class="line">global.Vue = <span class="built_in">require</span>(<span class="string">'vue'</span>)</div><div class="line"></div><div class="line"><span class="comment">// Obtém o layout HTML básico</span></div><div class="line"><span class="keyword">var</span> layout = fs.readFileSync(<span class="string">'./index.html'</span>, <span class="string">'utf8'</span>)</div><div class="line"></div><div class="line"><span class="comment">// Cria um renderizador</span></div><div class="line"><span class="keyword">var</span> renderer = <span class="built_in">require</span>(<span class="string">'vue-server-renderer'</span>).createRenderer()</div><div class="line"></div><div class="line"><span class="comment">// Cria um servidor Express</span></div><div class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</div><div class="line"><span class="keyword">var</span> server = express()</div><div class="line"></div><div class="line"><span class="comment">// Serve estaticamente os arquivos do diretório assets</span></div><div class="line">server.use(<span class="string">'/assets'</span>, express.static(</div><div class="line">  path.resolve(__dirname, <span class="string">'assets'</span>)</div><div class="line">))</div><div class="line"></div><div class="line"><span class="comment">// Intercepta todas as requisições GET</span></div><div class="line">server.get(<span class="string">'*'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">request, response</span>) </span>&#123;</div><div class="line">  <span class="comment">// Renderiza nosso aplicativo Vue como uma String</span></div><div class="line">  renderer.renderToString(</div><div class="line">    <span class="comment">// Cria uma instância do app para renderizar</span></div><div class="line">    <span class="built_in">require</span>(<span class="string">'./assets/app'</span>)(),</div><div class="line">    <span class="comment">// Manipula o resultado renderizado</span></div><div class="line">    <span class="function"><span class="keyword">function</span> (<span class="params">error, html</span>) </span>&#123;</div><div class="line">      <span class="comment">// Se ocorreu alguma erro enquanto processava...</span></div><div class="line">      <span class="keyword">if</span> (error) &#123;</div><div class="line">        <span class="comment">// Registra o erro no console</span></div><div class="line">        <span class="built_in">console</span>.error(error)</div><div class="line">        <span class="comment">// Informa o cliente que algo errado aconteceu</span></div><div class="line">        <span class="keyword">return</span> response</div><div class="line">          .status(<span class="number">500</span>)</div><div class="line">          .send(<span class="string">'Server Error'</span>)</div><div class="line">      &#125;</div><div class="line">      <span class="comment">// Senão, envia o layout renderizado injetado no HTML carregado</span></div><div class="line">      response.send(layout.replace(<span class="string">'&lt;div id="app"&gt;&lt;/div&gt;'</span>, html))</div><div class="line">    &#125;</div><div class="line">  )</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// Levanta o servidor Express criado, escutando na porta 5000</span></div><div class="line">server.listen(<span class="number">5000</span>, <span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (error) <span class="keyword">throw</span> error</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'Servidor executando em localhost:5000'</span>)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>É isso! Aqui está <a href="https://github.com/erickpetru/vue-ssr-demo-simple" target="_blank" rel="external">a aplicação completa</a>, caso queira clonar e experimentar mais. Assim que estiver com ela executando localmente, é possível confirmar que a renderização pelo lado do servidor está realmente funcionando ao clicar com o botão direito na página e selecionar <code>Exibir código fonte da página</code> (ou algo similar). Você deve ver isso no <code>body</code>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span> <span class="attr">server-rendered</span>=<span class="string">"true"</span>&gt;</span>Você esteve aqui por 0s&amp;period;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Ao invés de simplesmente:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Streaming-de-Resposta"><a href="#Streaming-de-Resposta" class="headerlink" title="Streaming de Resposta"></a>Streaming de Resposta</h2><p>Vue também suporta renderizar em um <strong>stream</strong>, ideal em servidores que suportam <em>streaming</em>. Isto permite que o HTML seja escrito na resposta <em>enquanto é gerado</em>, ao invés de uma vez só no final. O resultado são requisições servidas mais rapidamente, sem nenhuma desvantagem.</p>
+<p>Para adaptar nosso aplicativo da seção anterior para <em>streaming</em>, simplesmente trocamos o conteúdo do bloco <code>server.get(&#39;*&#39;, ...)</code> pelo seguinte:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Quebra o layout em duas seções de HTML</span></div><div class="line"><span class="keyword">var</span> layoutSections = layout.split(<span class="string">'&lt;div id="app"&gt;&lt;/div&gt;'</span>)</div><div class="line"><span class="keyword">var</span> preAppHTML = layoutSections[<span class="number">0</span>]</div><div class="line"><span class="keyword">var</span> postAppHTML = layoutSections[<span class="number">1</span>]</div><div class="line"></div><div class="line"><span class="comment">// Intercepta todas as requisições GET</span></div><div class="line">server.get(<span class="string">'*'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">request, response</span>) </span>&#123;</div><div class="line">  <span class="comment">// Renderiza nosso aplicativo Vue como um Stream</span></div><div class="line">  <span class="keyword">var</span> stream = renderer.renderToStream(<span class="built_in">require</span>(<span class="string">'./assets/app'</span>)())</div><div class="line"></div><div class="line">  <span class="comment">// Escreve o HTML antes do app na resposta</span></div><div class="line">  response.write(preAppHTML)</div><div class="line"></div><div class="line">  <span class="comment">// Sempre que novos pedaços são renderizados...</span></div><div class="line">  stream.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">chunk</span>) </span>&#123;</div><div class="line">    <span class="comment">// Escreve o novo pedaço na resposta</span></div><div class="line">    response.write(chunk)</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  <span class="comment">// Quando todos os pedaços estiverem renderizados...</span></div><div class="line">  stream.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// Escreve o HTML após o app na resposta</span></div><div class="line">    response.end(postAppHTML)</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  <span class="comment">// Se ocorrer algum erro enquanto está processando...</span></div><div class="line">  stream.on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</div><div class="line">    <span class="comment">// Registra o erro no console</span></div><div class="line">    <span class="built_in">console</span>.error(error)</div><div class="line">    <span class="comment">// Informa o cliente que algo errado aconteceu</span></div><div class="line">    <span class="keyword">return</span> response</div><div class="line">      .status(<span class="number">500</span>)</div><div class="line">      .send(<span class="string">'Server Error'</span>)</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Como você pode ver, não é muito mais complicado que a seção anterior, mesmo que o conceito de <em>streams</em> seja novo para você. Nós apenas:</p>
+<ol>
+<li>Configuramos o <em>stream</em></li>
+<li>Escrevemos o HTML antes do app Vue na resposta</li>
+<li>Escrevemos o HTML do app Vue na resposta quando ele se torna disponível</li>
+<li>Escrevemos o HTML após o app Vue na resposta e encerramos ela</li>
+<li>Interceptamos quaisquer erros</li>
+</ol>
+<h2 id="Cache-de-Componentes"><a href="#Cache-de-Componentes" class="headerlink" title="Cache de Componentes"></a>Cache de Componentes</h2><p>SSR no Vue é bem rápido por padrão, mas você pode melhorar ainda mais o desempenho ao colocar em cache os componentes renderizados. Isto deve ser considerado um recurso avançado, já que fazer cache dos componentes errados (ou os certos, mas com as chaves erradas) poderia acabar por estragar a renderização de seu aplicativo. Especificamente:</p>
+<p class="tip">Você não deveria fazer  cache de um componente cujos componentes filhos dependem de estado global (por exemplo, do vuex). Se fizer, estes componentes filhos (e de fato, toda a árvore de componentes) também serão colocados em cache. Seja especialmente cauteloso com componentes que aceitam slots/filhos.</p>
+
+<h3 id="Configuracao"><a href="#Configuracao" class="headerlink" title="Configuração"></a>Configuração</h3><p>Com este aviso dado, aqui vai como colocamos componentes em cache.</p>
+<p>Primeiramente, você precisará fornecer ao renderizador um <a href="https://www.npmjs.com/package/vue-server-renderer#cache" target="_blank" rel="external">objeto de cache</a>. Aqui está um exemplo simples com <a href="https://github.com/isaacs/node-lru-cache" target="_blank" rel="external">lru-cache</a>:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> createRenderer = <span class="built_in">require</span>(<span class="string">'vue-server-renderer'</span>).createRenderer</div><div class="line"><span class="keyword">var</span> lru = <span class="built_in">require</span>(<span class="string">'lru-cache'</span>)</div><div class="line"></div><div class="line"><span class="keyword">var</span> renderer = createRenderer(&#123;</div><div class="line">  <span class="attr">cache</span>: lru(<span class="number">1000</span>)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Isto irá colocar em cache até 1000 renderizações únicas. Para outras configurações que se alinham melhor a necessidades de uso de memória, veja as <a href="https://github.com/isaacs/node-lru-cache#options" target="_blank" rel="external">opções do lru-cache</a>.</p>
+<p>Então, para os componentes que quer fazer cache, você deve oferecer a eles:</p>
+<ul>
+<li>um valor exclusivo para o atributo <code>name</code></li>
+<li>uma função <code>serverCacheKey</code>, retornando uma chave única para o escopo do componente</li>
+</ul>
+<p>Por exemplo:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">Vue.component(&#123;</div><div class="line">  <span class="attr">name</span>: <span class="string">'list-item'</span>,</div><div class="line">  <span class="attr">template</span>: <span class="string">'&lt;li&gt;&#123;&#123; item.name &#125;&#125;&lt;/li&gt;'</span>,</div><div class="line">  <span class="attr">props</span>: [<span class="string">'item'</span>],</div><div class="line">  <span class="attr">serverCacheKey</span>: <span class="function"><span class="keyword">function</span> (<span class="params">props</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> props.item.type + <span class="string">'::'</span> + props.item.id</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="Componentes-Ideais-para-Cache"><a href="#Componentes-Ideais-para-Cache" class="headerlink" title="Componentes Ideais para Cache"></a>Componentes Ideais para Cache</h3><p>Qualquer componente “puro” pode ficar em cache com segurança - isto é, qualquer componente em que é garantido sempre gerar o mesmo HTML a partir das mesmas propriedades. Exemplos comuns incluem:</p>
+<ul>
+<li>Componentes estáticos (sempre geram o mesmo HTML, então a função <code>serverCacheKey</code> pode simplesmente retornar <code>true</code>)</li>
+<li>Componentes de itens de listas (quando fizerem parte de listas grandes, fazer cache deles pode melhorar significativamente o desempenho)</li>
+<li>Componentes genéricos de UI (como botões, <em>alerts</em>, etc - ao menos aqueles que aceitam valores através de props e não slots/filhos)</li>
+</ul>
+<h2 id="Processo-de-Build-Roteamento-e-Hidratacao-de-Estado-Vuex"><a href="#Processo-de-Build-Roteamento-e-Hidratacao-de-Estado-Vuex" class="headerlink" title="Processo de Build, Roteamento e Hidratação de Estado Vuex"></a>Processo de Build, Roteamento e Hidratação de Estado Vuex</h2><p>Neste momento, você deve ter entendido os conceitos fundamentais por trás da renderização pelo lado do servidor. Entretanto, assim que introduzir um processo de <em>build</em>, roteamento e/ou gerenciamento de estado com Vuex, cada qual trará suas próprias considerações.</p>
+<p>Para se tornar verdadeiramente um mestre em renderização server-side para aplicações complexas, recomendamos que se aprofunde nos seguintes materiais:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/vue-server-renderer#api" target="_blank" rel="external">documentação do vue-server-renderer</a>: mais detalhes nos tópicos cobertos aqui, assim como documentação de tópicos mais avançados, como <a href="https://www.npmjs.com/package/vue-server-renderer#why-use-bundlerenderer" target="_blank" rel="external">prevenir contaminação entre requisições</a> e <a href="https://www.npmjs.com/package/vue-server-renderer#creating-the-server-bundle" target="_blank" rel="external">adicionar build separado para o servidor</a></li>
+<li><a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="external">vue-hackernews-2.0</a>: o exemplo definitivo de integração de todas as bibliotecas principais do Vue e seus conceitos em uma única aplicação</li>
+</ul>
+
+    
+      <div class="guide-links">
+        
+          <span>← <a href="/br.vuejs.org/guide/unit-testing.html">Unit Testing</a></span>
+        
+        
+          <span style="float:right"><a href="/br.vuejs.org/guide/migration.html">Migration from Vue 1.x</a> →</span>
+        
+      </div>
+    
+    <div class="footer">
+      Encontrou um problema ou quer contribuir com a documentação?
+      <a href="https://github.com/vuejs-br/br.vuejs.org/blob/master/src/guide/ssr.md" target="_blank">
+        Edite esta página no Github!
+      </a>
+    </div>
+</div>
+
+                
+            </div>
+            <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+            <script src="/js/smooth-scroll.min.js"></script>
+            <script src="/js/common.js"></script>
+        
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

@@ -1,5 +1,4 @@
 (function () {
-
   initSearch()
   initMobileMenu()
   if (PAGE_TYPE) {
@@ -26,7 +25,7 @@
       })
     }
 
-    function createSourceSearchPath(query) {
+    function createSourceSearchPath (query) {
       return 'https://github.com/search?utf8=%E2%9C%93&q=repo%3Avuejs%2Fvue+extension%3Ajs+' + encodeURIComponent(query) + '+&type=Code'
     }
   }
@@ -95,8 +94,6 @@
 
   function initSubHeaders () {
     var each = [].forEach
-    var main = document.getElementById('main')
-    var header = document.getElementById('header')
     var sidebar = document.querySelector('.sidebar')
     var content = document.querySelector('.content')
 
@@ -181,7 +178,7 @@
         }
       }
       if (last)
-      setActive(last.id, !hoveredOverSidebar)
+        {setActive(last.id, !hoveredOverSidebar)}
     }
 
     function makeLink (h) {
@@ -189,7 +186,7 @@
       var text = h.textContent.replace(/\(.*\)$/, '')
       link.innerHTML =
         '<a class="section-link" data-scroll href="#' + h.id + '">' +
-          text +
+        text +
         '</a>'
       return link
     }
@@ -219,16 +216,16 @@
 
     function setActive (id, shouldScrollIntoView) {
       var previousActive = sidebar.querySelector('.section-link.active')
-      var currentActive = typeof id === 'string'
-        ? sidebar.querySelector('.section-link[href="#' + id + '"]')
-        : id
+      var currentActive = typeof id === 'string' ?
+        sidebar.querySelector('.section-link[href="#' + id + '"]') :
+        id
       if (currentActive !== previousActive) {
         if (previousActive) previousActive.classList.remove('active')
         currentActive.classList.add('active')
         if (shouldScrollIntoView) {
-          var currentPageOffset = currentPageAnchor
-            ? currentPageAnchor.offsetTop - 8
-            : 0
+          var currentPageOffset = currentPageAnchor ?
+            currentPageAnchor.offsetTop - 8 :
+            0
           var currentActiveOffset = currentActive.offsetTop + currentActive.parentNode.clientHeight
           var sidebarHeight = sidebar.clientHeight
           var currentActiveIsInView = (
@@ -236,11 +233,11 @@
             currentActiveOffset <= sidebar.scrollTop + sidebarHeight
           )
           var linkNotFurtherThanSidebarHeight = currentActiveOffset - currentPageOffset < sidebarHeight
-          var newScrollTop = currentActiveIsInView
-            ? sidebar.scrollTop
-            : linkNotFurtherThanSidebarHeight
-              ? currentPageOffset
-              : currentActiveOffset - sidebarHeight
+          var newScrollTop = currentActiveIsInView ?
+            sidebar.scrollTop :
+            linkNotFurtherThanSidebarHeight ?
+            currentPageOffset :
+            currentActiveOffset - sidebarHeight
           sidebar.scrollTop = newScrollTop
         }
       }

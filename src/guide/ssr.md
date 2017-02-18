@@ -137,11 +137,11 @@ Agora que temos o código de nossa aplicação, vamos criar um arquivo `index.ht
 <html>
 <head>
   <title>Meu App Vue</title>
-  <script src="/assets/vue.js"></script>
+  <script src="assets/vue.js"></script>
 </head>
 <body>
   <div id="app"></div>
-  <script src="/assets/app.js"></script>
+  <script src="assets/app.js"></script>
   <script>app.$mount('#app')</script>
 </body>
 </html>

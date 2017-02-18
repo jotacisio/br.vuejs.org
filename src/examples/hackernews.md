@@ -9,7 +9,7 @@ order: 10
 {% raw %}
 <div style="max-width:600px">
   <a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank">
-    <img style="width:100%" src="/images/hn.png">
+    <img style="width:100%" src="images/hn.png">
   </a>
 </div>
 {% endraw %}
@@ -32,4 +32,4 @@ order: 10
 
 ## Visão Geral da Arquitetura
 
-<img width="973" alt="Hackernew clone architecture overview" src="/images/hn-architecture.png">
+<img width="973" alt="Hackernew clone architecture overview" src="images/hn-architecture.png">

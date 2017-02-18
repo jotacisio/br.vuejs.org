@@ -264,7 +264,7 @@ A diretiva `v-link` foi substituída por um novo [componente `<router-link>`](ht
 Você precisará atualizá-lo desta forma:
 
 ``` html
-<router-link to="/about">Sobre</router-link>
+<router-link to="about">Sobre</router-link>
 ```
 
 {% raw %}
@@ -287,7 +287,7 @@ A diretiva `v-link-active` também foi removida em favor de se especificar uma *
 Para isto:
 
 ``` html
-<router-link tag="li" to="/about">
+<router-link tag="li" to="about">
   <a>Sobre</a>
 </router-link>
 ```

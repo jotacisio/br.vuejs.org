@@ -12,29 +12,29 @@
 
 ## Atuais mantedores premium:
 
-<p style="text-align: center; padding-top: 30px; margin-bottom: 0"><a href="http://www.thedifferenceengine.io/"><img src="/images/tde.png" style="width: 300px"></a></p>
+<p style="text-align: center; padding-top: 30px; margin-bottom: 0"><a href="http://www.thedifferenceengine.io/"><img src="images/tde.png" style="width: 300px"></a></p>
 
 <p style="text-align: center; margin-top: 0; margin-bottom: 60px" class="sponsors-page">
   <a href="https://itunescn.com">
-    <img src="/images/itunescn.png">
+    <img src="images/itunescn.png">
   </a><a href="https://jsfiddle.net">
-    <img src="/images/jsfiddle.png">
+    <img src="images/jsfiddle.png">
   </a><a href="https://laravel.com">
-    <img src="/images/laravel.png">
+    <img src="images/laravel.png">
   </a><a href="https://chaitin.cn">
-    <img src="/images/chaitin.png">
+    <img src="images/chaitin.png">
   </a><a href="https://htmlburger.com" target="_blank">
-    <img src="/images/htmlburger.png">
+    <img src="images/htmlburger.png">
   </a><a href="https://starter.someline.com/" target="_blank">
-    <img src="/images/someline.png">
+    <img src="images/someline.png">
   </a><a href="http://gold.xitu.io/?utm_source=vuejs&utm_medium=image&utm_content=juejin&utm_campaign=q3_website" target="_blank">
-    <img width="180px" src="/images/juejin.png">
+    <img width="180px" src="images/juejin.png">
   </a><a href="http://monterail.com/" target="_blank">
-    <img src="/images/monterail.png">
+    <img src="images/monterail.png">
   </a><a href="https://www.trisoft.ro/" target="_blank">
-    <img src="/images/trisoft.png">
+    <img src="images/trisoft.png">
   </a><a href="http://actualize.co" target="_blank" style="width:180px">
-    <img src="/images/actualize.png" style="width:180px">
+    <img src="images/actualize.png" style="width:180px">
   </a>
 </p>
 

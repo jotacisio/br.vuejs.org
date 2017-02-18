@@ -19,7 +19,7 @@ Tudo isso é resolvido através dos **Componentes Single-File** com a extensão 
 
 Aqui está um simples exemplos de um arquivo que chamaremos de `Hello.vue`:
 
-<img src="/images/vue-component.png" style="display: block; margin: 30px auto">
+<img src="images/vue-component.png" style="display: block; margin: 30px auto">
 
 Agora nós obtivemos:
 
@@ -29,7 +29,7 @@ Agora nós obtivemos:
 
 Como prometido, podemos também utilizar pré-processadores como Pug (Jade), Babel (com módulos ES2015+) e Stylus para componentes mais limpos e mais ricos em recursos.
 
-<img src="/images/vue-component-with-preprocessors.png" style="display: block; margin: 30px auto">
+<img src="images/vue-component-with-preprocessors.png" style="display: block; margin: 30px auto">
 
 Estas linguagens específicas são meros exemplos. Poderíamos tão facilmente usar Buble, TypeScript, SCSS, PostCSS - ou qualquer outro que acreditarmos nos tornar mais produtivos.
 

@@ -23,9 +23,9 @@ Simplesmente faça o download e inclua a tag script. `Vue` será registrado como
 <p class="tip">Não use a versão minificada durante a fase de desenvolvimento. Você irá perder avisos interessantes para os erros mais comuns!</p>
 
 <div id="downloads">
-<a class="button" href="/js/vue.js" download>Versão de desenvolvimento</a><span class="light info">Com mensagens de erro completas e modo debug</span>
+<a class="button" href="js/vue.js" download>Versão de desenvolvimento</a><span class="light info">Com mensagens de erro completas e modo debug</span>
 
-<a class="button" href="/js/vue.min.js" download>Versão de produção</a><span class="light info">Sem mensagens de erro, {{gz_size}}kb min+gzip</span>
+<a class="button" href="js/vue.min.js" download>Versão de produção</a><span class="light info">Sem mensagens de erro, {{gz_size}}kb min+gzip</span>
 </div>
 
 ### CDN

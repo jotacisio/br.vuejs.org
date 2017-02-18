@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Introduction - vue.js</title>
+        <title>Introdução - vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,20 +13,19 @@
         <script>
             window.PAGE_TYPE = "guide"
         </script>
-        <link rel="stylesheet" href="/css/page.css">
+        <link rel="stylesheet" href="/br.vuejs.org/css/page.css">
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46852172-1', 'vuejs.org');
+  ga('create', 'UA-46852172-1', 'erickpetru.github.io');
   ga('send', 'pageview');
 </script>
         <script src="/js/vue.js"></script>
     </head>
-    <body>
-        <div id="mobile-bar" >
+    <body class="docs">        <div id="mobile-bar" >
             <a class="menu-button"></a>
             <a class="logo" href="/"></a>
         </div>
@@ -41,12 +40,12 @@
     <input type="text" id="search-query-nav" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/guide/" class="nav-link current">Guide</a></li>
+<li><a href="/guide/" class="nav-link current">Guia</a></li>
 <li><a href="/api/" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link">Examples</a></li>
+<li><a href="/examples/" class="nav-link">Exemplos</a></li>
 <li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
 <li class="nav-dropdown-container">
-  <a class="nav-link">Community</a><span class="arrow"></span>
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
   <ul class="nav-dropdown">
     <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
     <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
@@ -60,7 +59,7 @@
 </div>
 
         
-            <div id="main">
+            <div id="main" class="fix-sidebar">
                 
                     
     <div class="sidebar">
@@ -70,12 +69,12 @@
     <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/guide/" class="nav-link current">Guide</a></li>
+<li><a href="/guide/" class="nav-link current">Guia</a></li>
 <li><a href="/api/" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link">Examples</a></li>
+<li><a href="/examples/" class="nav-link">Exemplos</a></li>
 <li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
 <li class="nav-dropdown-container">
-  <a class="nav-link">Community</a><span class="arrow"></span>
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
   <ul class="nav-dropdown">
     <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
     <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
@@ -90,11 +89,11 @@
         <div id="donate" style="margin-bottom: 20px">
             <span class="wrapper" style="width: 110px">
               <img src="/images/patreon.png">
-              <a href="/support-vuejs">Support Vue.js</a>
+              <a href="/support-vuejs">Ajude o Vue.js</a>
             </span>
         </div>
         <h2>
-            Guide
+            Guia
             <select class="version-select">
                 <option value="SELF" selected>2.0</option>
                 <option value="v1">1.0</option>
@@ -106,13 +105,13 @@
             
                 
                 
-                  <li><h3>Essentials</h3></li>
+                  <li><h3>Essenciais</h3></li>
                 
                 
                 
                 
                 <li>
-                    <a href="/guide/installation.html" class="sidebar-link">Installation</a>
+                    <a href="/guide/installation.html" class="sidebar-link">Instalação</a>
                 </li>
             
                 
@@ -121,7 +120,7 @@
                 
                 
                 <li>
-                    <a href="/guide/index.html" class="sidebar-link current">Introduction</a>
+                    <a href="/guide/index.html" class="sidebar-link current">Introdução</a>
                 </li>
             
                 
@@ -130,7 +129,7 @@
                 
                 
                 <li>
-                    <a href="/guide/instance.html" class="sidebar-link">The Vue Instance</a>
+                    <a href="/guide/instance.html" class="sidebar-link">A Instância Vue</a>
                 </li>
             
                 
@@ -148,7 +147,7 @@
                 
                 
                 <li>
-                    <a href="/guide/computed.html" class="sidebar-link">Computed Properties and Watchers</a>
+                    <a href="/guide/computed.html" class="sidebar-link">Propriedades Computadas e Observadores</a>
                 </li>
             
                 
@@ -157,7 +156,7 @@
                 
                 
                 <li>
-                    <a href="/guide/class-and-style.html" class="sidebar-link">Class and Style Bindings</a>
+                    <a href="/guide/class-and-style.html" class="sidebar-link">Bindings Class e Style</a>
                 </li>
             
                 
@@ -166,7 +165,7 @@
                 
                 
                 <li>
-                    <a href="/guide/conditional.html" class="sidebar-link">Conditional Rendering</a>
+                    <a href="/guide/conditional.html" class="sidebar-link">Renderização Condicional</a>
                 </li>
             
                 
@@ -175,7 +174,7 @@
                 
                 
                 <li>
-                    <a href="/guide/list.html" class="sidebar-link">List Rendering</a>
+                    <a href="/guide/list.html" class="sidebar-link">Renderização de Listas</a>
                 </li>
             
                 
@@ -184,7 +183,7 @@
                 
                 
                 <li>
-                    <a href="/guide/events.html" class="sidebar-link">Event Handling</a>
+                    <a href="/guide/events.html" class="sidebar-link">Manipulação de Eventos</a>
                 </li>
             
                 
@@ -193,7 +192,7 @@
                 
                 
                 <li>
-                    <a href="/guide/forms.html" class="sidebar-link">Form Input Bindings</a>
+                    <a href="/guide/forms.html" class="sidebar-link">Input Bindings em Formulários</a>
                 </li>
             
                 
@@ -202,18 +201,18 @@
                 
                 
                 <li>
-                    <a href="/guide/components.html" class="sidebar-link">Components</a>
+                    <a href="/guide/components.html" class="sidebar-link">Componentes</a>
                 </li>
             
                 
                 
                 
-                  <li><h3>Advanced</h3></li>
+                  <li><h3>Avançado</h3></li>
                 
                 
                 
                 <li>
-                    <a href="/guide/transitions.html" class="sidebar-link">Transitions: Entering, Leaving, and Lists</a>
+                    <a href="/guide/transitions.html" class="sidebar-link">Efeitos de Transição</a>
                 </li>
             
                 
@@ -231,7 +230,7 @@
                 
                 
                 <li>
-                    <a href="/guide/render-function.html" class="sidebar-link">Render Functions</a>
+                    <a href="/guide/render-function.html" class="sidebar-link">Funções "render" (Renderização)</a>
                 </li>
             
                 
@@ -240,7 +239,7 @@
                 
                 
                 <li>
-                    <a href="/guide/reactivity.html" class="sidebar-link">Reactivity in Depth</a>
+                    <a href="/guide/reactivity.html" class="sidebar-link">Reatividada em Profundidade</a>
                 </li>
             
                 
@@ -249,7 +248,7 @@
                 
                 
                 <li>
-                    <a href="/guide/custom-directive.html" class="sidebar-link">Custom Directives</a>
+                    <a href="/guide/custom-directive.html" class="sidebar-link">Diretivas Personalizadas</a>
                 </li>
             
                 
@@ -276,7 +275,16 @@
                 
                 
                 <li>
-                    <a href="/guide/single-file-components.html" class="sidebar-link">Single File Components</a>
+                    <a href="/guide/single-file-components.html" class="sidebar-link">Componentes Single-File</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/deployment.html" class="sidebar-link">Publicando em Produção</a>
                 </li>
             
                 
@@ -294,7 +302,7 @@
                 
                 
                 <li>
-                    <a href="/guide/state-management.html" class="sidebar-link">State Management</a>
+                    <a href="/guide/state-management.html" class="sidebar-link">Gerenciamento de Estado</a>
                 </li>
             
                 
@@ -312,14 +320,14 @@
                 
                 
                 <li>
-                    <a href="/guide/ssr.html" class="sidebar-link">Server-Side Rendering</a>
+                    <a href="/guide/ssr.html" class="sidebar-link">Renderização Server-Side</a>
                 </li>
             
                 
                 
                 
                 
-                  <li><h3>Migrating</h3></li>
+                  <li><h3>Migração</h3></li>
                 
                 
                 <li>
@@ -332,7 +340,7 @@
                 
                 
                 <li>
-                    <a href="/guide/migration-vue-router.html" class="sidebar-link">Migration from Vue Router 0.7.x</a>
+                    <a href="/guide/migration-vue-router.html" class="sidebar-link">Migração do Vue Router 0.7.x</a>
                 </li>
             
                 
@@ -340,10 +348,19 @@
                 
                 
                 
-                  <li><h3>Meta</h3></li>
+                <li>
+                    <a href="/guide/migration-vuex.html" class="sidebar-link">Migração do Vuex 0.6.x para 1.0</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                  <li><h3>Diversos</h3></li>
                 
                 <li>
-                    <a href="/guide/comparison.html" class="sidebar-link">Comparison with Other Frameworks</a>
+                    <a href="/guide/comparison.html" class="sidebar-link">Comparação com Outros Frameworks</a>
                 </li>
             
                 
@@ -361,17 +378,26 @@
 
 
 <div class="content guide with-sidebar index-guide">
-    <div id="ad">
-  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script>
+    
+      <div id="ad">
+  <span>Sponsored By</span><br>
+  <a href="http://www.thedifferenceengine.io/" target="_blank"
+    style="background-color: rgba(0,0,0,.85); padding: 10px 0">
+    <img src="/images/tde.png">
+  </a>
+  <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script> -->
 </div>
 
-    <h1>Introduction</h1>
-    <h2 id="What-is-Vue-js"><a href="#What-is-Vue-js" class="headerlink" title="What is Vue.js?"></a>What is Vue.js?</h2><p>Vue (pronounced /vjuː/, like <strong>view</strong>) is a <strong>progressive framework</strong> for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is very easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with <a href="single-file-components.html">modern tooling</a> and <a href="https://github.com/vuejs/awesome-vue#libraries--plugins" target="_blank" rel="external">supporting libraries</a>.</p>
-<p>If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the <a href="comparison.html">Comparison with Other Frameworks</a>.</p>
-<h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><p>The easiest way to try out Vue.js is using the <a href="https://jsfiddle.net/chrisvfritz/4tpzm3e1/" target="_blank" rel="external">JSFiddle Hello World example</a>. Feel free to open it in another tab and follow along as we go through some basic examples. If you prefer downloading / installing from a package manager, check out the <a href="/guide/installation.html">Installation</a> page.</p>
-<h2 id="Declarative-Rendering"><a href="#Declarative-Rendering" class="headerlink" title="Declarative Rendering"></a>Declarative Rendering</h2><p>At the core of Vue.js is a system that enables us to declaratively render data to the DOM using straightforward template syntax:</p>
+    
+    
+      <h1>Introdução</h1>
+    
+    <h2 id="O-que-e-Vue-js"><a href="#O-que-e-Vue-js" class="headerlink" title="O que é Vue.js?"></a>O que é Vue.js?</h2><p>Vue (pronuncia-se /vjuː/, como <strong>view</strong>, em inglês) é um <strong>framework progressivo</strong> para a construção de interfaces de usuário. Ao contrário de outros frameworks monolíticos, Vue foi projetado desde sua concepção para ser adotável incrementalmente. A biblioteca principal é focada exclusivamente na camada visual (<em>view layer</em>), sendo muito fácil escolher e integrar com outras bibliotecas ou projetos existentes. Por outro lado, Vue também é perfeitamente capaz de dar poder a sofisticadas SPA (Single-Page Applications) quando usado em conjunto com <a href="single-file-components.html">ferramentas modernas</a> e <a href="https://github.com/vuejs/awesome-vue#libraries--plugins" target="_blank" rel="external">bibliotecas adicionais</a>.</p>
+<p>Se você é um desenvolvedor <em>frontend</em> experiente e quer saber como Vue se compara a outras bibliotecas/frameworks, confira a <a href="comparison.html">Comparação com Outros Frameworks</a>.</p>
+<h2 id="Primeiros-Passos"><a href="#Primeiros-Passos" class="headerlink" title="Primeiros Passos"></a>Primeiros Passos</h2><p>A forma mais simples de testar Vue.js é usando o <a href="https://jsfiddle.net/ErickPetru/rpko63o0/" target="_blank" rel="external">exemplo de Olá Mundo no JSFiddle</a>. Sinta-se à vontade para abrí-lo em outra aba e acompanhar junto enquanto seguimos por alguns exemplos básicos. Se você preferir baixar/instalar através de um gerenciador de pacotes, confira a página sobre <a href="/guide/installation.html">Instalação</a>.</p>
+<h2 id="Renderizacao-Declarativa"><a href="#Renderizacao-Declarativa" class="headerlink" title="Renderização Declarativa"></a>Renderização Declarativa</h2><p>No núcleo do Vue.js está um sistema que nos permite declarativamente renderizar dados no DOM (Document Object Model) usando uma sintaxe de <em>template</em> simples:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></div><div class="line">  &#123;&#123; message &#125;&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app'</span>,</div><div class="line">  data: &#123;</div><div class="line">    message: <span class="string">'Hello Vue!'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#app'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">message</span>: <span class="string">'Olá Vue!'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app" class="demo">
   {{ message }}
@@ -380,38 +406,38 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    message: 'Olá Vue!'
   }
 })
 </script>
 
-<p>We have already created our very first Vue app! This looks pretty similar to just rendering a string template, but Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now <strong>reactive</strong>. How do we know? Just open up your browser’s JavaScript console and set <code>app.message</code> to a different value. You should see the rendered example above update accordingly.</p>
-<p>In addition to text interpolation, we can also bind element attributes like this:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-2"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-bind:title</span>=<span class="string">"message"</span>&gt;</span></div><div class="line">    Hover your mouse over me for a few seconds to see my dynamically bound title!</div><div class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app2 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-2'</span>,</div><div class="line">  data: &#123;</div><div class="line">    message: <span class="string">'You loaded this page on '</span> + <span class="keyword">new</span> <span class="built_in">Date</span>()</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Nós acabamos de criar nosso primeiro aplicativo Vue! Isso parece muito similar a simplesmente renderizar uma <em>template string</em>, mas Vue fez bastante trabalho por debaixo dos panos. Os dados e o DOM estão agora interligados e tudo se tornou <strong>reativo</strong>. Como podemos ter certeza? Apenas abra o console JavaScript de seu navegador e coloque um valor diferente em <code>app.message</code>. Você verá o exemplo renderizado acima se atualizando consequentemente.</p>
+<p>Além de interpolação de texto, podemos interligar atributos de elementos:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-2"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-bind:title</span>=<span class="string">"message"</span>&gt;</span></div><div class="line">    Pare o mouse sobre mim e veja a dica interligada dinamicamente!</div><div class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app2 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#app-2'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">message</span>: <span class="string">'Você carregou esta página em '</span> + <span class="keyword">new</span> <span class="built_in">Date</span>()</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app-2" class="demo">
   <span v-bind:title="message">
-    Hover your mouse over me for a few seconds to see my dynamically bound title!
+    Pare o mouse sobre mim e veja a dica interligada dinamicamente!
   </span>
 </div>
 <script>
 var app2 = new Vue({
   el: '#app-2',
   data: {
-    message: 'You loaded this page on ' + new Date()
+    message: 'Você carregou esta página em ' + new Date()
   }
 })
 </script>
 
-<p>Here we are encountering something new. The <code>v-bind</code> attribute you are seeing is called a <strong>directive</strong>. Directives are prefixed with <code>v-</code> to indicate that they are special attributes provided by Vue, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Here it is basically saying “keep this element’s <code>title</code> attribute up-to-date with the <code>message</code> property on the Vue instance.”</p>
-<p>If you open up your JavaScript console again and enter <code>app2.message = &#39;some new message&#39;</code>, you’ll once again see that the bound HTML - in this case the <code>title</code> attribute - has been updated.</p>
-<h2 id="Conditionals-and-Loops"><a href="#Conditionals-and-Loops" class="headerlink" title="Conditionals and Loops"></a>Conditionals and Loops</h2><p>It’s quite simple to toggle the presence of an element, too:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-3"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">v-if</span>=<span class="string">"seen"</span>&gt;</span>Now you see me<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app3 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-3'</span>,</div><div class="line">  data: &#123;</div><div class="line">    seen: <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Aqui estamos nos deparando com algo novo. O atributo <code>v-bind</code> que você está vendo é chamado de <strong>diretiva</strong>. Diretivas são prefixadas com <code>v-</code> para indicar que são atributos especiais providos pelo Vue, e como você deve ter percebido, aplicam comportamento especial de reatividade ao DOM renderizado. Neste caso, basicamente está sendo dito: “mantenha o atributo <code>title</code> do elemento sempre atualizado em relação à propriedade <code>message</code> da instância Vue”.</p>
+<p>Se você abrir seu console JavaScript novamente e informar <code>app2.message = &#39;alguma nova mensagem&#39;</code>, novamente poderá ver que o HTML vinculado - neste caso, o atributo <code>title</code> - foi atualizado imediatamente.</p>
+<h2 id="Condicionais-e-Lacos"><a href="#Condicionais-e-Lacos" class="headerlink" title="Condicionais e Laços"></a>Condicionais e Laços</h2><p>Também é muito simples alternar a presença de um elemento:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-3"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">v-if</span>=<span class="string">"seen"</span>&gt;</span>Agora você me viu<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app3 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#app-3'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">seen</span>: <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app-3" class="demo">
-  <span v-if="seen">Now you see me</span>
+  <span v-if="seen">Agora você me viu</span>
 </div>
 <script>
 var app3 = new Vue({
@@ -422,11 +448,11 @@ var app3 = new Vue({
 })
 </script>
 
-<p>Go ahead and enter <code>app3.seen = false</code> in the console. You should see the message disappear.</p>
-<p>This example demonstrates that we can bind data to not only text and attributes, but also the <strong>structure</strong> of the DOM. Moreover, Vue also provides a powerful transition effect system that can automatically apply <a href="transitions.html">transition effects</a> when elements are inserted/updated/removed by Vue.</p>
-<p>There are quite a few other directives, each with its own special functionality. For example, the <code>v-for</code> directive can be used for displaying a list of items using the data from an Array:</p>
+<p>Vá em frente e informe <code>app3.seen = false</code> no console. Você verá a mensagem desaparecer.</p>
+<p>Este exemplo demonstra que nós podemos interligar dados não apenas ao texto e aos atributos, mas também à <strong>estrutura</strong> do DOM. Mais do que isso, Vue também provê um poderoso sistema de transições que pode automaticamente aplicar <a href="transitions.html">efeitos de transição</a> quando elementos são inseridos/atualizados/removidos pelo Vue.</p>
+<p>Existem mais algumas diretivas, cada uma com sua própria funcionalidade. Por exemplo, a diretiva <code>v-for</code> pode ser usada para exibir uma lista de itens usando dados de um Array:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-4"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span>&gt;</span></div><div class="line">      &#123;&#123; todo.text &#125;&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app4 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-4'</span>,</div><div class="line">  data: &#123;</div><div class="line">    todos: [</div><div class="line">      &#123; text: <span class="string">'Learn JavaScript'</span> &#125;,</div><div class="line">      &#123; text: <span class="string">'Learn Vue'</span> &#125;,</div><div class="line">      &#123; text: <span class="string">'Build something awesome'</span> &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app4 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#app-4'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">todos</span>: [</div><div class="line">      &#123; <span class="attr">text</span>: <span class="string">'Aprender JavaScript'</span> &#125;,</div><div class="line">      &#123; <span class="attr">text</span>: <span class="string">'Aprender Vue'</span> &#125;,</div><div class="line">      &#123; <span class="attr">text</span>: <span class="string">'Criar algo incrível'</span> &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app-4" class="demo">
   <ol>
@@ -440,28 +466,28 @@ var app4 = new Vue({
   el: '#app-4',
   data: {
     todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue' },
-      { text: 'Build something awesome' }
+      { text: 'Aprender JavaScript' },
+      { text: 'Aprender Vue' },
+      { text: 'Criar algo incrível' }
     ]
   }
 })
 </script>
 
-<p>In the console, enter <code>app4.todos.push({ text: &#39;New item&#39; })</code>. You should see a new item appended to the list.</p>
-<h2 id="Handling-User-Input"><a href="#Handling-User-Input" class="headerlink" title="Handling User Input"></a>Handling User Input</h2><p>To let users interact with your app, we can use the <code>v-on</code> directive to attach event listeners that invoke methods on our Vue instances:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-5"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"reverseMessage"</span>&gt;</span>Reverse Message<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app5 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-5'</span>,</div><div class="line">  data: &#123;</div><div class="line">    message: <span class="string">'Hello Vue.js!'</span></div><div class="line">  &#125;,</div><div class="line">  methods: &#123;</div><div class="line">    reverseMessage: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">this</span>.message = <span class="keyword">this</span>.message.split(<span class="string">''</span>).reverse().join(<span class="string">''</span>)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>No console, informe <code>app4.todos.push({ text: &#39;Novo item&#39; })</code>. Você verá um novo item ser acrescentado dinamicamente à lista.</p>
+<h2 id="Tratando-Interacao-do-Usuario"><a href="#Tratando-Interacao-do-Usuario" class="headerlink" title="Tratando Interação do Usuário"></a>Tratando Interação do Usuário</h2><p>Para permitir aos usuários interagir com o aplicativo, podemos usar a diretiva <code>v-on</code> para anexar escutas a eventos (<em>event listeners</em>) que invocam métodos em nossas instâncias Vue:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-5"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"reverseMessage"</span>&gt;</span>Inverter Mensagem<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app5 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#app-5'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">message</span>: <span class="string">'Olá Vue!'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">methods</span>: &#123;</div><div class="line">    <span class="attr">reverseMessage</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">this</span>.message = <span class="keyword">this</span>.message.split(<span class="string">''</span>).reverse().join(<span class="string">''</span>)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app-5" class="demo">
   <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message</button>
+  <button v-on:click="reverseMessage">Inverter Mensagem</button>
 </div>
 <script>
 var app5 = new Vue({
   el: '#app-5',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Olá Vue!'
   },
   methods: {
     reverseMessage: function () {
@@ -471,10 +497,10 @@ var app5 = new Vue({
 })
 </script>
 
-<p>Note in the method we simply update the state of our app without touching the DOM - all DOM manipulations are handled by Vue, and the code you write is focused on the underlying logic.</p>
-<p>Vue also provides the <code>v-model</code> directive that makes two-way binding between form input and app state a breeze:</p>
+<p>Note que no método nós simplesmente atualizamos o estado de nossa aplicação sem tocar no DOM - todas as manipulações do documento são tratadas pelo Vue, o código que você escreve é focado na lógica fundamental.</p>
+<p>Vue também provê a diretiva <code>v-model</code>, que torna a interligação de mão dupla (<em>two-way binding</em>) entre a caixa de texto e o estado da aplicação, uma moleza:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-6"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">"message"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app6 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-6'</span>,</div><div class="line">  data: &#123;</div><div class="line">    message: <span class="string">'Hello Vue!'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app6 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#app-6'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">message</span>: <span class="string">'Olá Vue!'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app-6" class="demo">
   <p>{{ message }}</p>
@@ -484,22 +510,22 @@ var app5 = new Vue({
 var app6 = new Vue({
   el: '#app-6',
   data: {
-    message: 'Hello Vue!'
+    message: 'Olá Vue!'
   }
 })
 </script>
 
-<h2 id="Composing-with-Components"><a href="#Composing-with-Components" class="headerlink" title="Composing with Components"></a>Composing with Components</h2><p>The component system is another important concept in Vue, because it’s an abstraction that allows us to build large-scale applications composed of small, self-contained, and often reusable components. If we think about it, almost any type of application interface can be abstracted into a tree of components:</p>
-<p><img src="/images/components.png" alt="Component Tree"></p>
-<p>In Vue, a component is essentially a Vue instance with pre-defined options. Registering a component in Vue is straightforward:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Define a new component called todo-item</span></div><div class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</div><div class="line">  template: <span class="string">'&lt;li&gt;This is a todo&lt;/li&gt;'</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>Now you can compose it in another component’s template:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!--</span></div><div class="line">  Create an instance of the todo-item component</div><div class="line">  for each todo in a todos array</div><div class="line">  --&gt;</div><div class="line">  <span class="tag">&lt;<span class="name">todo-item</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span>&gt;</span><span class="tag">&lt;/<span class="name">todo-item</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>But this would render the same text for every todo, which is not super interesting. We should be able to pass data from the parent scope into child components. Let’s modify the component definition to make it accept a <a href="/guide/components.html#Props">prop</a>:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</div><div class="line">  <span class="comment">// The todo-item component now accepts a</span></div><div class="line">  <span class="comment">// "prop", which is like a custom attribute.</span></div><div class="line">  <span class="comment">// This prop is called todo.</span></div><div class="line">  props: [<span class="string">'todo'</span>],</div><div class="line">  template: <span class="string">'&lt;li&gt;&#123;&#123; todo.text &#125;&#125;&lt;/li&gt;'</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>Now we can pass the todo into each repeated component using <code>v-bind</code>:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-7"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--</span></div><div class="line">    Now we provide each todo-item with the todo object</div><div class="line">    it's representing, so that its content can be dynamic</div><div class="line">    --&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">todo-item</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span> <span class="attr">v-bind:todo</span>=<span class="string">"todo"</span>&gt;</span><span class="tag">&lt;/<span class="name">todo-item</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app7 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  el: <span class="string">'#app-7'</span>,</div><div class="line">  data: &#123;</div><div class="line">    todos: [</div><div class="line">      &#123; text: <span class="string">'Learn JavaScript'</span> &#125;,</div><div class="line">      &#123; text: <span class="string">'Learn Vue'</span> &#125;,</div><div class="line">      &#123; text: <span class="string">'Build something awesome'</span> &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="Composicao-com-Componentes"><a href="#Composicao-com-Componentes" class="headerlink" title="Composição com Componentes"></a>Composição com Componentes</h2><p>O sistema de componentes também é outro importante conceito no Vue, por ser uma abstração que proporciona a construção de aplicações de larga escala compostas por pequenos componentes, auto-contidos e frequentemente reutilizáveis. Se nós pensarmos sobre isso, quase qualquer tipo de interface de uma aplicação pode ser abstraída em uma árvore de componentes:</p>
+<p><img src="/images/components.png" alt="Árvore de Componentes"></p>
+<p>No Vue, um componente é essencialmente uma instância Vue com opções predefinidas. Registrar um componente no Vue é simples:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Define um novo componente chamado todo-item</span></div><div class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</div><div class="line">  <span class="attr">template</span>: <span class="string">'&lt;li&gt;Isso é um item&lt;/li&gt;'</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Agora você pode compor com isto no <em>template</em> de outro componente:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!--</span></div><div class="line">  Cria uma instância de um componente todo-item</div><div class="line">  para cada item "todo" de um Array de "todos"</div><div class="line">  --&gt;</div><div class="line">  <span class="tag">&lt;<span class="name">todo-item</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span>&gt;</span><span class="tag">&lt;/<span class="name">todo-item</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Mas certamente isto renderizaria o mesmo texto em cada item, o que não é lá muito interessante. Nós devemos passar os dados do escopo superior (<em>parent</em>) para os componentes filhos. Vamos modificar a definição do componente para fazê-lo aceitar uma <a href="/guide/components.html#Props">prop</a>:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</div><div class="line">  <span class="comment">// O componente todo-item agora aceita uma</span></div><div class="line">  <span class="comment">// "prop", que é como um atributo customizado.</span></div><div class="line">  <span class="comment">// Esta propriedade foi chamada de "todo".</span></div><div class="line">  props: [<span class="string">'todo'</span>],</div><div class="line">  <span class="attr">template</span>: <span class="string">'&lt;li&gt;&#123;&#123; todo.text &#125;&#125;&lt;/li&gt;'</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>Agora podemos passar o dado <code>todo</code> em cada repetição de componente usando <code>v-bind</code>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-7"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--</span></div><div class="line">    Agora provemos a cada todo-item o objeto todo que ele</div><div class="line">    representa, de forma que seu conteúdo se tornou dinâmico</div><div class="line">    --&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">todo-item</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span> <span class="attr">v-bind:todo</span>=<span class="string">"todo"</span>&gt;</span><span class="tag">&lt;/<span class="name">todo-item</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> app7 = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">el</span>: <span class="string">'#app-7'</span>,</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">todos</span>: [</div><div class="line">      &#123; <span class="attr">text</span>: <span class="string">'Aprender JavaScript'</span> &#125;,</div><div class="line">      &#123; <span class="attr">text</span>: <span class="string">'Aprender Vue'</span> &#125;,</div><div class="line">      &#123; <span class="attr">text</span>: <span class="string">'Criar algo incrível'</span> &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
 <div id="app-7" class="demo">
   <ol>
@@ -515,40 +541,40 @@ var app7 = new Vue({
   el: '#app-7',
   data: {
     todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue' },
-      { text: 'Build something awesome' }
+      { text: 'Aprender JavaScript' },
+      { text: 'Aprender Vue' },
+      { text: 'Criar algo incrível' }
     ]
   }
 })
 </script>
 
-<p>This is just a contrived example, but we have managed to separate our app into two smaller units, and the child is reasonably well-decoupled from the parent via the props interface. We can now further improve our <code>&lt;todo-item&gt;</code> component with more complex template and logic without affecting the parent app.</p>
-<p>In a large application, it is necessary to divide the whole app into components to make development manageable. We will talk a lot more about components <a href="/guide/components.html">later in the guide</a>, but here’s an (imaginary) example of what an app’s template might look like with components:</p>
+<p>Este é apenas um exemplo fictício, mas nós conseguimos separar nossa aplicação em duas pequenas unidades, sendo que o componente filho está razoavelmente bem desacoplado do componente pai graças à funcionalidade de propriedades. Agora podemos melhorar ainda mais nosso componente <code>&lt;todo-item&gt;</code> com <em>template</em> e lógica mais complexos sem afetar a aplicação pai.</p>
+<p>Em uma aplicação grande, é essencial dividir todo o aplicativo em componentes para tornar o desenvolvimento gerenciável. Falaremos mais sobre componentes <a href="/guide/components.html">futuramente neste guia</a>, mas aqui está um exemplo (imaginário) da aparência que o <em>template</em> de um aplicativo poderia ter com o uso de componentes:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">app-nav</span>&gt;</span><span class="tag">&lt;/<span class="name">app-nav</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">app-view</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">app-sidebar</span>&gt;</span><span class="tag">&lt;/<span class="name">app-sidebar</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">app-content</span>&gt;</span><span class="tag">&lt;/<span class="name">app-content</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">app-view</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="Relation-to-Custom-Elements"><a href="#Relation-to-Custom-Elements" class="headerlink" title="Relation to Custom Elements"></a>Relation to Custom Elements</h3><p>You may have noticed that Vue components are very similar to <strong>Custom Elements</strong>, which are part of the <a href="http://www.w3.org/wiki/WebComponents/" target="_blank" rel="external">Web Components Spec</a>. That’s because Vue’s component syntax is loosely modeled after the spec. For example, Vue components implement the <a href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md" target="_blank" rel="external">Slot API</a> and the <code>is</code> special attribute. However, there are a few key differences:</p>
+<h3 id="Relacao-com-Elementos-Customizados"><a href="#Relacao-com-Elementos-Customizados" class="headerlink" title="Relação com Elementos Customizados"></a>Relação com Elementos Customizados</h3><p>Você pode ter notado como componentes Vue são similares aos <strong>Elementos Customizados</strong>, os quais fazem parte da <a href="http://www.w3.org/wiki/WebComponents/" target="_blank" rel="external">Especificação de Web Components</a>. Isto ocorre pois a sintaxe de componentes Vue foi vagamente modelada a partir da especificação. Por exemplo, eles implementam a <a href="https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md" target="_blank" rel="external">Slot API</a> e o atributo especial <code>is</code>. Entretanto, existem diferenças marcantes:</p>
 <ol>
-<li><p>The Web Components Spec is still in draft status, and is not natively implemented in every browser. In comparison, Vue components don’t require any polyfills and work consistently in all supported browsers (IE9 and above). When needed, Vue components can also be wrapped inside a native custom element.</p>
+<li><p>A Especificação de Web Components ainda é um rascunho (<em>draft status</em>), não está nativamente implementada em todos os navegadores. Em comparação, componentes Vue não requerem qualquer tipo de <em>polyfill</em> e funcionam consistentemente em todos os navegadores suportados (IE9 e superiores). Quando necessário, componentes Vue também podem ser envolvidos dentro de um elemento customizado nativo.</p>
 </li>
-<li><p>Vue components provide important features that are not available in plain custom elements, most notably cross-component data flow, custom event communication and build tool integrations.</p>
+<li><p>Componentes Vue oferecem importantes recursos não disponíveis em elementos customizados tradicionais, mais notavelmente: fluxo de dados entre componentes, comunicação com eventos customizados e integração com ferramentas para <em>build</em>.</p>
 </li>
 </ol>
-<h2 id="Ready-for-More"><a href="#Ready-for-More" class="headerlink" title="Ready for More?"></a>Ready for More?</h2><p>We’ve just briefly introduced the most basic features of Vue.js core - the rest of this guide will cover them and other advanced features with much finer details, so make sure to read through it all!</p>
+<h2 id="Pronto-para-Mais"><a href="#Pronto-para-Mais" class="headerlink" title="Pronto para Mais?"></a>Pronto para Mais?</h2><p>Nós apenas introduzimos brevemente os recursos mais básicos do núcleo do Vue.js - o resto deste guia se aprofundará neles e em outros recursos avançados em um nível muito maior de detalhes, portanto certifique-se de ler tudo!</p>
 
     
       <div class="guide-links">
         
-          <span>← <a href="/guide/installation.html">Installation</a></span>
+          <span>← <a href="/br.vuejs.org/guide/installation.html">Instalação</a></span>
         
         
-          <span style="float:right"><a href="/guide/instance.html">The Vue Instance</a> →</span>
+          <span style="float:right"><a href="/br.vuejs.org/guide/instance.html">A Instância Vue</a> →</span>
         
       </div>
     
     <div class="footer">
-      Caught a mistake or want to contribute to the documentation?
-      <a href="https://github.com/vuejs/vuejs.org/blob/master/src/guide/index.md" target="_blank">
-        Edit this page on Github!
+      Encontrou um problema ou quer contribuir com a documentação?
+      <a href="https://github.com/vuejs-br/br.vuejs.org/blob/master/src/guide/index.md" target="_blank">
+        Edite esta página no Github!
       </a>
     </div>
 </div>

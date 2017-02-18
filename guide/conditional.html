@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Conditional Rendering - vue.js</title>
+        <title>Renderização Condicional - vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,20 +13,19 @@
         <script>
             window.PAGE_TYPE = "guide"
         </script>
-        <link rel="stylesheet" href="/css/page.css">
+        <link rel="stylesheet" href="/br.vuejs.org/css/page.css">
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46852172-1', 'vuejs.org');
+  ga('create', 'UA-46852172-1', 'erickpetru.github.io');
   ga('send', 'pageview');
 </script>
         <script src="/js/vue.js"></script>
     </head>
-    <body>
-        <div id="mobile-bar" >
+    <body class="docs">        <div id="mobile-bar" >
             <a class="menu-button"></a>
             <a class="logo" href="/"></a>
         </div>
@@ -41,12 +40,12 @@
     <input type="text" id="search-query-nav" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/guide/" class="nav-link current">Guide</a></li>
+<li><a href="/guide/" class="nav-link current">Guia</a></li>
 <li><a href="/api/" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link">Examples</a></li>
+<li><a href="/examples/" class="nav-link">Exemplos</a></li>
 <li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
 <li class="nav-dropdown-container">
-  <a class="nav-link">Community</a><span class="arrow"></span>
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
   <ul class="nav-dropdown">
     <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
     <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
@@ -60,7 +59,7 @@
 </div>
 
         
-            <div id="main">
+            <div id="main" class="fix-sidebar">
                 
                     
     <div class="sidebar">
@@ -70,12 +69,12 @@
     <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/guide/" class="nav-link current">Guide</a></li>
+<li><a href="/guide/" class="nav-link current">Guia</a></li>
 <li><a href="/api/" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link">Examples</a></li>
+<li><a href="/examples/" class="nav-link">Exemplos</a></li>
 <li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
 <li class="nav-dropdown-container">
-  <a class="nav-link">Community</a><span class="arrow"></span>
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
   <ul class="nav-dropdown">
     <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
     <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
@@ -90,11 +89,11 @@
         <div id="donate" style="margin-bottom: 20px">
             <span class="wrapper" style="width: 110px">
               <img src="/images/patreon.png">
-              <a href="/support-vuejs">Support Vue.js</a>
+              <a href="/support-vuejs">Ajude o Vue.js</a>
             </span>
         </div>
         <h2>
-            Guide
+            Guia
             <select class="version-select">
                 <option value="SELF" selected>2.0</option>
                 <option value="v1">1.0</option>
@@ -106,13 +105,13 @@
             
                 
                 
-                  <li><h3>Essentials</h3></li>
+                  <li><h3>Essenciais</h3></li>
                 
                 
                 
                 
                 <li>
-                    <a href="/guide/installation.html" class="sidebar-link">Installation</a>
+                    <a href="/guide/installation.html" class="sidebar-link">Instalação</a>
                 </li>
             
                 
@@ -121,7 +120,7 @@
                 
                 
                 <li>
-                    <a href="/guide/index.html" class="sidebar-link">Introduction</a>
+                    <a href="/guide/index.html" class="sidebar-link">Introdução</a>
                 </li>
             
                 
@@ -130,7 +129,7 @@
                 
                 
                 <li>
-                    <a href="/guide/instance.html" class="sidebar-link">The Vue Instance</a>
+                    <a href="/guide/instance.html" class="sidebar-link">A Instância Vue</a>
                 </li>
             
                 
@@ -148,7 +147,7 @@
                 
                 
                 <li>
-                    <a href="/guide/computed.html" class="sidebar-link">Computed Properties and Watchers</a>
+                    <a href="/guide/computed.html" class="sidebar-link">Propriedades Computadas e Observadores</a>
                 </li>
             
                 
@@ -157,7 +156,7 @@
                 
                 
                 <li>
-                    <a href="/guide/class-and-style.html" class="sidebar-link">Class and Style Bindings</a>
+                    <a href="/guide/class-and-style.html" class="sidebar-link">Bindings Class e Style</a>
                 </li>
             
                 
@@ -166,7 +165,7 @@
                 
                 
                 <li>
-                    <a href="/guide/conditional.html" class="sidebar-link current">Conditional Rendering</a>
+                    <a href="/guide/conditional.html" class="sidebar-link current">Renderização Condicional</a>
                 </li>
             
                 
@@ -175,7 +174,7 @@
                 
                 
                 <li>
-                    <a href="/guide/list.html" class="sidebar-link">List Rendering</a>
+                    <a href="/guide/list.html" class="sidebar-link">Renderização de Listas</a>
                 </li>
             
                 
@@ -184,7 +183,7 @@
                 
                 
                 <li>
-                    <a href="/guide/events.html" class="sidebar-link">Event Handling</a>
+                    <a href="/guide/events.html" class="sidebar-link">Manipulação de Eventos</a>
                 </li>
             
                 
@@ -193,7 +192,7 @@
                 
                 
                 <li>
-                    <a href="/guide/forms.html" class="sidebar-link">Form Input Bindings</a>
+                    <a href="/guide/forms.html" class="sidebar-link">Input Bindings em Formulários</a>
                 </li>
             
                 
@@ -202,18 +201,18 @@
                 
                 
                 <li>
-                    <a href="/guide/components.html" class="sidebar-link">Components</a>
+                    <a href="/guide/components.html" class="sidebar-link">Componentes</a>
                 </li>
             
                 
                 
                 
-                  <li><h3>Advanced</h3></li>
+                  <li><h3>Avançado</h3></li>
                 
                 
                 
                 <li>
-                    <a href="/guide/transitions.html" class="sidebar-link">Transitions: Entering, Leaving, and Lists</a>
+                    <a href="/guide/transitions.html" class="sidebar-link">Efeitos de Transição</a>
                 </li>
             
                 
@@ -231,7 +230,7 @@
                 
                 
                 <li>
-                    <a href="/guide/render-function.html" class="sidebar-link">Render Functions</a>
+                    <a href="/guide/render-function.html" class="sidebar-link">Funções "render" (Renderização)</a>
                 </li>
             
                 
@@ -240,7 +239,7 @@
                 
                 
                 <li>
-                    <a href="/guide/reactivity.html" class="sidebar-link">Reactivity in Depth</a>
+                    <a href="/guide/reactivity.html" class="sidebar-link">Reatividada em Profundidade</a>
                 </li>
             
                 
@@ -249,7 +248,7 @@
                 
                 
                 <li>
-                    <a href="/guide/custom-directive.html" class="sidebar-link">Custom Directives</a>
+                    <a href="/guide/custom-directive.html" class="sidebar-link">Diretivas Personalizadas</a>
                 </li>
             
                 
@@ -276,7 +275,16 @@
                 
                 
                 <li>
-                    <a href="/guide/single-file-components.html" class="sidebar-link">Single File Components</a>
+                    <a href="/guide/single-file-components.html" class="sidebar-link">Componentes Single-File</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/guide/deployment.html" class="sidebar-link">Publicando em Produção</a>
                 </li>
             
                 
@@ -294,7 +302,7 @@
                 
                 
                 <li>
-                    <a href="/guide/state-management.html" class="sidebar-link">State Management</a>
+                    <a href="/guide/state-management.html" class="sidebar-link">Gerenciamento de Estado</a>
                 </li>
             
                 
@@ -312,14 +320,14 @@
                 
                 
                 <li>
-                    <a href="/guide/ssr.html" class="sidebar-link">Server-Side Rendering</a>
+                    <a href="/guide/ssr.html" class="sidebar-link">Renderização Server-Side</a>
                 </li>
             
                 
                 
                 
                 
-                  <li><h3>Migrating</h3></li>
+                  <li><h3>Migração</h3></li>
                 
                 
                 <li>
@@ -332,7 +340,7 @@
                 
                 
                 <li>
-                    <a href="/guide/migration-vue-router.html" class="sidebar-link">Migration from Vue Router 0.7.x</a>
+                    <a href="/guide/migration-vue-router.html" class="sidebar-link">Migração do Vue Router 0.7.x</a>
                 </li>
             
                 
@@ -340,10 +348,19 @@
                 
                 
                 
-                  <li><h3>Meta</h3></li>
+                <li>
+                    <a href="/guide/migration-vuex.html" class="sidebar-link">Migração do Vuex 0.6.x para 1.0</a>
+                </li>
+            
+                
+                
+                
+                
+                
+                  <li><h3>Diversos</h3></li>
                 
                 <li>
-                    <a href="/guide/comparison.html" class="sidebar-link">Comparison with Other Frameworks</a>
+                    <a href="/guide/comparison.html" class="sidebar-link">Comparação com Outros Frameworks</a>
                 </li>
             
                 
@@ -361,46 +378,55 @@
 
 
 <div class="content guide with-sidebar conditional-guide">
-    <div id="ad">
-  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script>
+    
+      <div id="ad">
+  <span>Sponsored By</span><br>
+  <a href="http://www.thedifferenceengine.io/" target="_blank"
+    style="background-color: rgba(0,0,0,.85); padding: 10px 0">
+    <img src="/images/tde.png">
+  </a>
+  <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script> -->
 </div>
 
-    <h1>Conditional Rendering</h1>
-    <h2 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a>v-if</h2><p>In string templates, for example Handlebars, we would write a conditional block like this:</p>
+    
+    
+      <h1>Renderização Condicional</h1>
+    
+    <h2 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a>v-if</h2><p>Em string templates, Handlebars por exemplo, escreveríamos um bloco condicional como este:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- Handlebars template --&gt;</span></div><div class="line">&#123;&#123;#if ok&#125;&#125;</div><div class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Yes<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">&#123;&#123;/if&#125;&#125;</div></pre></td></tr></table></figure>
-<p>In Vue, we use the <code>v-if</code> directive to achieve the same:</p>
+<p>No Vue, usamos a diretiva <code>v-if</code> para conseguir o mesmo:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span>Yes<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>It is also possible to add an “else” block with <code>v-else</code>:</p>
+<p>Também é possível adicionar um bloco “else” com <code>v-else</code>:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span>Yes<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-else</span>&gt;</span>No<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="Template-v-if"><a href="#Template-v-if" class="headerlink" title="Template v-if"></a>Template v-if</h3><p>Because <code>v-if</code> is a directive, it has to be attached to a single element. But what if we want to toggle more than one element? In this case we can use <code>v-if</code> on a <code>&lt;template&gt;</code> element, which serves as an invisible wrapper. The final rendered result will not include the <code>&lt;template&gt;</code> element.</p>
+<h3 id="Template-v-if"><a href="#Template-v-if" class="headerlink" title="Template v-if"></a>Template v-if</h3><p>Como <code>v-if</code> é uma diretiva, precisa ser anexado a um único elemento. Mas e se quisermos alternar entre mais de um elemento? Neste caso podemos usar <code>v-if</code> em um elemento <code>&lt;template&gt;</code>, que serve como um invólucro invisível. O resultado final processado não incluirá o elemento <code>&lt;template&gt;</code>.</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="v-else"><a href="#v-else" class="headerlink" title="v-else"></a>v-else</h3><p>You can use the <code>v-else</code> directive to indicate an “else block” for <code>v-if</code>:</p>
+<h3 id="v-else"><a href="#v-else" class="headerlink" title="v-else"></a>v-else</h3><p>Você pode usar a diretiva <code>v-else</code> para indicar um “bloco else” para <code>v-if</code>:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"Math.random() &gt; 0.5"</span>&gt;</span></div><div class="line">  Now you see me</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span>&gt;</span></div><div class="line">  Now you don't</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>The <code>v-else</code> element must immediately follow the <code>v-if</code> element - otherwise it will not be recognized.</p>
-<h2 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h2><p>Another option for conditionally displaying an element is the <code>v-show</code> directive. The usage is largely the same:</p>
+<p>O elemento <code>v-else</code> deve seguir imediatamente o <code>v-if</code> - caso contrário <code>v-else</code> não será reconhecido.</p>
+<h2 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h2><p>Outra opção para mostrar condicionalmente um elemento é a diretiva <code>v-show</code>. O que é basicamente o mesmo.</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-show</span>=<span class="string">"ok"</span>&gt;</span>Hello!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>The difference is that an element with <code>v-show</code> will always be rendered and remain in the DOM; <code>v-show</code> simply toggles the <code>display</code> CSS property of the element.</p>
-<p class="tip">Note that <code>v-show</code> doesn’t support the <code>&lt;template&gt;</code> syntax, nor does it work with <code>v-else</code>.</p>
+<p>A diferença é que um elemento com <code>v-show</code> sempre será renderizado e incluído no DOM; <code>v-show</code> simplesmente alterna a propriedade CSS <code>display</code> do elemento.</p>
+<p class="tip">Observe que <code>v-show</code> não oferece suporte a sintaxe de   <code>&lt;template&gt;</code>, nem funciona com <code>v-else</code>.</p>
 
-<h2 id="v-if-vs-v-show"><a href="#v-if-vs-v-show" class="headerlink" title="v-if vs. v-show"></a>v-if vs. v-show</h2><p><code>v-if</code> is “real” conditional rendering because it ensures that event listeners and child components inside the conditional block are properly destroyed and re-created during toggles.</p>
-<p><code>v-if</code> is also <strong>lazy</strong>: if the condition is false on initial render, it will not do anything - the conditional block won’t be rendered until the condition becomes true for the first time.</p>
-<p>In comparison, <code>v-show</code> is much simpler - the element is always rendered regardless of initial condition, with just simple CSS-based toggling.</p>
-<p>Generally speaking, <code>v-if</code> has higher toggle costs while <code>v-show</code> has higher initial render costs. So prefer <code>v-show</code> if you need to toggle something very often, and prefer <code>v-if</code> if the condition is unlikely to change at runtime.</p>
+<h2 id="v-if-vs-v-show"><a href="#v-if-vs-v-show" class="headerlink" title="v-if vs. v-show"></a>v-if vs. v-show</h2><p><code>v-if</code> é a renderização condicional “real”, pois garante que event listeners e  componentes child dentro do bloco condicional sejam devidamente destruídos e recriados durante a alternância.</p>
+<p><code>v-if</code> também é <strong>preguiçoso</strong>: se a condição for false na renderização inicial, <code>v-if</code> não fará nada - o bloco condicional não vai ser processado até que a condição se torne verdadeira pela primeira vez.</p>
+<p>Em comparação, <code>v-show</code> é muito mais simples - o elemento é sempre processado independentemente da condição inicial, a visibilidade do elemento se basea simplesmente na alteração do CSS.</p>
+<p>De um modo geral, <code>v-if</code> tem um custo maior de alternância, enquanto <code>v-show</code> tem um custo maior na renderização inicial. Então prefira <code>v-show</code>, se você precisa alternar alguma coisa muito frequentemente; e prefira <code>v-if</code> se é mais improvável que a condição mude em tempo de execução.</p>
 
     
       <div class="guide-links">
         
-          <span>← <a href="/guide/class-and-style.html">Class and Style Bindings</a></span>
+          <span>← <a href="/br.vuejs.org/guide/class-and-style.html">Bindings Class e Style</a></span>
         
         
-          <span style="float:right"><a href="/guide/list.html">List Rendering</a> →</span>
+          <span style="float:right"><a href="/br.vuejs.org/guide/list.html">Renderização de Listas</a> →</span>
         
       </div>
     
     <div class="footer">
-      Caught a mistake or want to contribute to the documentation?
-      <a href="https://github.com/vuejs/vuejs.org/blob/master/src/guide/conditional.md" target="_blank">
-        Edit this page on Github!
+      Encontrou um problema ou quer contribuir com a documentação?
+      <a href="https://github.com/vuejs-br/br.vuejs.org/blob/master/src/guide/conditional.md" target="_blank">
+        Edite esta página no Github!
       </a>
     </div>
 </div>

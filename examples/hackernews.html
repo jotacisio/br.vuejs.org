@@ -13,20 +13,19 @@
         <script>
             window.PAGE_TYPE = "examples"
         </script>
-        <link rel="stylesheet" href="/css/page.css">
+        <link rel="stylesheet" href="/br.vuejs.org/css/page.css">
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46852172-1', 'vuejs.org');
+  ga('create', 'UA-46852172-1', 'erickpetru.github.io');
   ga('send', 'pageview');
 </script>
         <script src="/js/vue.js"></script>
     </head>
-    <body>
-        <div id="mobile-bar" >
+    <body class="docs">        <div id="mobile-bar" >
             <a class="menu-button"></a>
             <a class="logo" href="/"></a>
         </div>
@@ -41,12 +40,12 @@
     <input type="text" id="search-query-nav" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/guide/" class="nav-link">Guide</a></li>
+<li><a href="/guide/" class="nav-link">Guia</a></li>
 <li><a href="/api/" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link current">Examples</a></li>
+<li><a href="/examples/" class="nav-link current">Exemplos</a></li>
 <li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
 <li class="nav-dropdown-container">
-  <a class="nav-link">Community</a><span class="arrow"></span>
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
   <ul class="nav-dropdown">
     <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
     <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
@@ -60,7 +59,7 @@
 </div>
 
         
-            <div id="main">
+            <div id="main" class="fix-sidebar">
                 
                     
     <div class="sidebar">
@@ -70,12 +69,12 @@
     <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/guide/" class="nav-link">Guide</a></li>
+<li><a href="/guide/" class="nav-link">Guia</a></li>
 <li><a href="/api/" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link current">Examples</a></li>
+<li><a href="/examples/" class="nav-link current">Exemplos</a></li>
 <li><a href="https://medium.com/the-vue-point" target="_blank" class="nav-link">Blog</a></li>
 <li class="nav-dropdown-container">
-  <a class="nav-link">Community</a><span class="arrow"></span>
+  <a class="nav-link">Comunidade</a><span class="arrow"></span>
   <ul class="nav-dropdown">
     <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
     <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
@@ -90,7 +89,7 @@
         <div id="donate" style="margin-bottom: 20px">
             <span class="wrapper" style="width: 110px">
               <img src="/images/patreon.png">
-              <a href="/support-vuejs">Support Vue.js</a>
+              <a href="/support-vuejs">Ajude o Vue.js</a>
             </span>
         </div>
         <h2>
@@ -209,13 +208,22 @@
 
 
 <div class="content examples with-sidebar ">
-    <div id="ad">
-  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script>
+    
+      <div id="ad">
+  <span>Sponsored By</span><br>
+  <a href="http://www.thedifferenceengine.io/" target="_blank"
+    style="background-color: rgba(0,0,0,.85); padding: 10px 0">
+    <img src="/images/tde.png">
+  </a>
+  <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script> -->
 </div>
 
-    <h1>HackerNews Clone Example</h1>
+    
+    
+      <h1>HackerNews Clone Example</h1>
+    
     <blockquote>
-<p>This is a HackerNews clone built upon HN’s official Firebase API, Vue 2.0 + vue-router + vuex, with server-side rendering.</p>
+<p>Esse é um clone do Hackernews construído utilizando a API Firebase oficial do HackerNews, Vue 2.0 + vue-router + vuex e server-side rendering.</p>
 </blockquote>
 
 <div style="max-width:600px">
@@ -225,30 +233,30 @@
 </div>
 
 <blockquote>
-<p><a href="https://vue-hn.now.sh/" target="_blank" rel="external">Live Demo</a><br>Note: the demo may need some spin up time if nobody has accessed it for a certain period.</p>
+<p><a href="https://vue-hn.now.sh/" target="_blank" rel="external">Live Demo</a><br>Note: essa demonstração pode precisar de algum carregamento se ninguém tiver acessado-o por um certo período de tempo.</p>
 <p>[<a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="external">Source</a>]</p>
 </blockquote>
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<h2 id="Funcionalidades"><a href="#Funcionalidades" class="headerlink" title="Funcionalidades"></a>Funcionalidades</h2><ul>
 <li>Server Side Rendering<ul>
-<li>Vue + vue-router + vuex working together</li>
-<li>Server-side data pre-fetching</li>
+<li>Vue + vue-router + vuex trabalhando juntos</li>
+<li>Pré carregamento de dados Server-side</li>
 <li>Client-side state &amp; DOM hydration</li>
 </ul>
 </li>
 <li>Single-file Vue Components<ul>
-<li>Hot-reload in development</li>
-<li>CSS extraction for production</li>
+<li>Hot-reload em desenvolvimento</li>
+<li>CSS extraction para produção</li>
 </ul>
 </li>
-<li>Real-time List Updates with FLIP Animation</li>
+<li>Atualizações Real-time da lista com animações FLIP</li>
 </ul>
-<h2 id="Architecture-Overview"><a href="#Architecture-Overview" class="headerlink" title="Architecture Overview"></a>Architecture Overview</h2><p><img width="973" alt="Hackernew clone architecture overview" src="/images/hn-architecture.png"></p>
+<h2 id="Visao-Geral-da-Arquitetura"><a href="#Visao-Geral-da-Arquitetura" class="headerlink" title="Visão Geral da Arquitetura"></a>Visão Geral da Arquitetura</h2><p><img width="973" alt="Hackernew clone architecture overview" src="/images/hn-architecture.png"></p>
 
     
     <div class="footer">
-      Caught a mistake or want to contribute to the documentation?
-      <a href="https://github.com/vuejs/vuejs.org/blob/master/src/examples/hackernews.md" target="_blank">
-        Edit this page on Github!
+      Encontrou um problema ou quer contribuir com a documentação?
+      <a href="https://github.com/vuejs-br/br.vuejs.org/blob/master/src/examples/hackernews.md" target="_blank">
+        Edite esta página no Github!
       </a>
     </div>
 </div>

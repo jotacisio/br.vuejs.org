@@ -1,19 +1,18 @@
 # Hexo Configuration
-## Docs: http://zespia.tw/hexo/docs/configuration.html
-## Source: https://github.com/tommy351/hexo/
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo
 
 # Site
 title: Vue.js Brasil
-subtitle:
 description: "Reactive Components for Modern Web Interfaces"
 author: Erick Petrucelli
 email: erickpetru@gmail.com
-language: pt-BR
+language: pt
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://erickpetru.github.io/br.vuejs.org
-root: /
+url: https://erickpetru.github.io/br.vuejs.org
+root: /br.vuejs.org/
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives

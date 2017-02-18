@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
-    <link href="https://"cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <script>
         window.PAGE_TYPE = "guide"
@@ -403,7 +403,7 @@
 <p>Observe que todas as ações que modificam o estado do <em>store</em> são colocadas dentro do próprio. Este tipo de gerenciamento de estado centralizado torna mais fácil compreender quais tipos de mutação poderiam acontecer e como poderiam ser disparadas. Se algo der errado, teremos registros no console sobre cada passo realizado para rastrearmos o <em>bug</em>.</p>
 <p>Adicionalmente, cada instância/componente ainda pode gerenciar e manter seus próprios dados privados:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> vmA = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">privateState</span>: &#123;&#125;,</div><div class="line">    <span class="attr">sharedState</span>: store.state</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="keyword">var</span> vmB = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">privateState</span>: &#123;&#125;,</div><div class="line">    <span class="attr">sharedState</span>: store.state</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p><img src="/images/state.png" alt="State Management"></p>
+<p><img src="images/state.png" alt="State Management"></p>
 <p class="tip">É importante observar que você nunca deveria substituir o objeto de estado original em suas ações - os componentes e o <em>store</em> precisam compartilhar a referência ao mesmo objeto para que as mutações possam ser observadas.</p>
 
 <p>Conforme continuamos desenvolvendo esta convenção onde componentes nunca são autorizados a diretamente modificar o estado que percente ao <em>store</em>, ao invés disso devendo despachar eventos que notificam o <em>store</em> sobre ações que este deve realizar, eventualmente chegamos à arquitetura <a href="https://facebook.github.io/flux/" target="_blank" rel="external">Flux</a>. O benefício desta convenção é que podemos gravar todas as mutações de estado que acontecem ao <em>store</em> e implementar depuração avançada, como <em>logs</em> das mutações, <em>snapshots</em>, e até mesmo reversões no histórico / viagens no tempo.</p>
@@ -429,12 +429,12 @@
 
       
   </div>
-  <script src="https://"cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <script src="js/common.js"></script>
   
 
-  <script src="https://"cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);

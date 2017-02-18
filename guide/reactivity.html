@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
-    <link href="https://"cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <script>
         window.PAGE_TYPE = "guide"
@@ -397,7 +397,7 @@
 <h2 id="Como-as-Altercoes-sao-Monitoradas"><a href="#Como-as-Altercoes-sao-Monitoradas" class="headerlink" title="Como as Alterções são Monitoradas"></a>Como as Alterções são Monitoradas</h2><p>Quando você passar um objeto JavaScript simples para uma instância do Vue, como a opção <code>data</code>, o Vue irá percorrer todas as suas propriedades e convertê-las para getter/setters usando <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty" target="_blank" rel="external">Object.defineProperty</a>. Esta é uma característica un-shimmable encontrada somente a partir do ES5, razão pela qual o Vue não suporta o IE8 e versões anteriores.</p>
 <p>Os getter/setters são invisíveis para o usuário, mas debaixo do capô, eles permitem ao Vue executar o rastreamento de dependência e notificações de alteração quando propriedades são acessadas ou modificadas. Uma ressalva é que consoles de browsers formatam getter/setters diferentemente quando alteram objetos de dados, então você pode querer instalar o [vue-devtools] (<a href="https://github.com/vuejs/vue-devtools" target="_blank" rel="external">https://github.com/vuejs/vue-devtools</a>)  para uma ter interface mais amigável para inspeção.</p>
 <p>Cada instância de componente tem um observador de instância, <strong>watcher</strong>, correspondente, que registra todas as propriedades “tocadas” durante a renderização do componente e depedências. Mais tarde, quando o setter de uma dependência é acionado, ele notifica o watcher que então faz com que o componente seja re-renderizado.</p>
-<p><img src="/images/data.png" alt="Reactivity Cycle"></p>
+<p><img src="images/data.png" alt="Reactivity Cycle"></p>
 <h2 id="Resalva-sobre-a-deteccao-de-alteracoes"><a href="#Resalva-sobre-a-deteccao-de-alteracoes" class="headerlink" title="Resalva sobre a detecção de alterações"></a>Resalva sobre a detecção de alterações</h2><p>Devido às limitações do JavaScript moderno (e ao abandono do <code>Object.observe</code>), o Vue <strong>não pode detectar adicão ou exclusão</strong>. O Vue executa o processo de conversão de getter/setter na inicialização da instância; uma propriedade deve estar presente no objeto <code>data</code> nesse momento para que o Vue faça sua conversão e o torne reativo. Por exemplo:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">a</span>: <span class="number">1</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"><span class="comment">// `vm.a` is now reactive</span></div><div class="line"></div><div class="line">vm.b = <span class="number">2</span></div><div class="line"><span class="comment">// `vm.b` is NOT reactive</span></div></pre></td></tr></table></figure>
 <p>O Vue não permite adicionar dinamicamente novas propriedades reativas para uma instância já criada. No entanto, é possível adicionar propriedades reativas a um objeto utilizando o método <code>Vue.set(object, key, value)</code>:</p>
@@ -438,12 +438,12 @@
 
       
   </div>
-  <script src="https://"cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <script src="js/common.js"></script>
   
 
-  <script src="https://"cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);

@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
-    <link href="https://"cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <script>
         window.PAGE_TYPE = "guide"
@@ -413,7 +413,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">data</span>: &#123;</div><div class="line">    <span class="attr">a</span>: <span class="number">1</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">created</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// `this` aponta para a instância vm</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'a is: '</span> + <span class="keyword">this</span>.a)</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"><span class="comment">// -&gt; "a is: 1"</span></div></pre></td></tr></table></figure>
 <p>Existem outros hooks no qual serão chamados em diferentes etapas do ciclo de vida, como por exemplo <code>mounted</code>, <code>updated</code>, e <code>destroyed</code>. Todos os ciclos de vida são chamados com o seu <code>this</code> no contexto da instância Vue sendo invocada. Alguns usuários podem se questionar se o conceito de “controllers” está presente no mundo Vue, e a resposta é: não existem controllers. Sua lógica personalizada para um componente deverá fazer parte destes hooks do ciclo de vida.</p>
 <h2 id="Diagrama-do-ciclo-de-vida"><a href="#Diagrama-do-ciclo-de-vida" class="headerlink" title="Diagrama do ciclo de vida"></a>Diagrama do ciclo de vida</h2><p>Abaixo está um diagrama para o ciclo de vida do uma instância do Vue. Você não precisa entender completamente tudo do que está acontecendo no ciclo, mas este diagrama será útil no futuro.</p>
-<p><img src="/images/lifecycle.png" alt="Ciclo de vida"></p>
+<p><img src="images/lifecycle.png" alt="Ciclo de vida"></p>
 
     
       <div class="guide-links">
@@ -435,12 +435,12 @@
 
       
   </div>
-  <script src="https://"cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <script src="js/common.js"></script>
   
 
-  <script src="https://"cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);
